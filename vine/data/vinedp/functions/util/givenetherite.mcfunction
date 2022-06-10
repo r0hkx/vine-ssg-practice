@@ -1,0 +1,1 @@
+replaceitem entity @p container.13 netherite_ingot{display:{Name:'[{"text":"Drop to Reset","italic":false,"color":"gold"}]'}}
