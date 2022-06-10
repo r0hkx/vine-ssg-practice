@@ -1,2 +1,2 @@
-execute as @a[scores={resetWithDiamond=0}] run scoreboard players set @a resetWithDiamond 1
-execute as @a[scores={resetWithDiamond=1}] run scoreboard players set @a resetWithDiamond 0
+execute as @a[scores={resetWithDiamond=0}] run schedule function vinedp:settings/diamond/on 1t
+execute as @a[scores={resetWithDiamond=1}] run schedule function vinedp:settings/diamond/off 1t
