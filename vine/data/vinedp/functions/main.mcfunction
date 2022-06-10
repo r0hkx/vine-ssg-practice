@@ -1,12 +1,3 @@
-#test for
-execute as @a[scores={deaths=1..}] run function vinedp:testfor/death
-execute as @a[scores={droppedDiamond=1..}] run function vinedp:testfor/diamond
-execute as @a[scores={droppedNetherite=1..}] run function vinedp:testfor/netherite
-execute as @a[scores={droppedPickaxe=1..}] run function vinedp:testfor/pickaxe
-execute as @a[scores={usedFNS=1..}] run function vinedp:testfor/fns
-execute as @a[scores={brokenGrass=1..}] run function vinedp:testfor/grass
-execute at @a[scores={state=2}] if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
-
 # check if player is at overworld spawn
 execute at @e[tag=OverworldSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
 execute at @e[tag=OverworldSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
@@ -33,3 +24,12 @@ execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
 # settings displays
 execute at @a[scores={state=0}] run function vinedp:settings/display
+
+#test for
+execute as @a[scores={deaths=1..}] run function vinedp:testfor/death
+execute as @a[scores={droppedDiamond=1..}] run function vinedp:testfor/diamond
+execute as @a[scores={droppedNetherite=1..}] run function vinedp:testfor/netherite
+execute as @a[scores={droppedPickaxe=1..}] run function vinedp:testfor/pickaxe
+execute as @a[scores={usedFNS=1..}] run function vinedp:testfor/fns
+execute as @a[scores={brokenGrass=1..}] run function vinedp:testfor/grass
+execute at @a[scores={state=2}] if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
