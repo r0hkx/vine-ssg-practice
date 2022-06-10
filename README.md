@@ -8,6 +8,10 @@ Download the world zip from the **releases** section and then extract it to `.mi
 * Accurate Timers
 * Multiple Reset Options
 
+## Coming Soon
+* blacksmith portal practice
+* nether portal practice
+
 # For Contributors
 
 If you wish to contribute, contact r0hkx#7859 on discord
