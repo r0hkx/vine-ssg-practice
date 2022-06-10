@@ -26,7 +26,7 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=0}] run function v
 
 # if the player is in the nether exit portal reset
 # since the exit portal can only be in one spot we just check that one spot
-execute if block 1900 56 82 nether_portal run function vinedp:nether/finish
+execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 56 82 nether_portal run function vinedp:nether/finish
 
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
