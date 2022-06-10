@@ -19,7 +19,7 @@ function vinedp:overworld/loadmap
 title @a clear
 
 #give diamond a tick later cause inventory clears this tick
-execute if score @s resetWithDiamond matches 1 run schedule function vinedp:util/givediamond 1t
+schedule function vinedp:util/givediamond 1t
 
 #reset timer
 function vinedp:timer1t/reset

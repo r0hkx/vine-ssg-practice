@@ -18,15 +18,19 @@ gamerule spawnRadius 0
 # title times
 title @a times 10 60 10
 
-scoreboard objectives remove brokenGrass
 #objective init
 scoreboard objectives add timer dummy ""
+scoreboard objectives add timerDecimal dummy
+scoreboard objectives add timerInteger dummy
+scoreboard objectives add ONE_THOUSAND dummy
+scoreboard objectives add FOUR dummy
+scoreboard objectives add timerWithAnim dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add droppedDiamond minecraft.dropped:minecraft.diamond
 scoreboard objectives add droppedNetherite minecraft.dropped:minecraft.netherite_ingot
 scoreboard objectives add droppedPickaxe minecraft.dropped:minecraft.iron_pickaxe
 scoreboard objectives add usedFNS minecraft.used:minecraft.flint_and_steel
-scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
+scoreboard objectives add brokenGrass minecraft.broken:minecraft.grass
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy
@@ -48,3 +52,5 @@ scoreboard objectives add state dummy
 # state 4 = nether practice
 
 execute as @a unless score @s hasSettings matches 0.. run function vinedp:settings/defaults
+scoreboard players set ms ONE_THOUSAND 1000
+scoreboard players set ms FOUR 4
