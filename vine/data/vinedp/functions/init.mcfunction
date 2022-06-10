@@ -18,6 +18,7 @@ gamerule spawnRadius 0
 # title times
 title @a times 10 60 10
 
+scoreboard objectives remove brokenGrass
 #objective init
 scoreboard objectives add timer dummy ""
 scoreboard objectives add deaths deathCount
@@ -25,7 +26,7 @@ scoreboard objectives add droppedDiamond minecraft.dropped:minecraft.diamond
 scoreboard objectives add droppedNetherite minecraft.dropped:minecraft.netherite_ingot
 scoreboard objectives add droppedPickaxe minecraft.dropped:minecraft.iron_pickaxe
 scoreboard objectives add usedFNS minecraft.used:minecraft.flint_and_steel
-scoreboard objectives add brokenGrass minecraft.broken:minecraft.grass
+scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy
