@@ -21,6 +21,11 @@ title @a times 10 60 10
 scoreboard objectives remove brokenGrass
 #objective init
 scoreboard objectives add timer dummy ""
+scoreboard objectives add timerDecimal dummy
+scoreboard objectives add timerInteger dummy
+scoreboard objectives add ONE_THOUSAND dummy
+scoreboard objectives add FOUR dummy
+scoreboard objectives add timerWithAnim dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add droppedDiamond minecraft.dropped:minecraft.diamond
 scoreboard objectives add droppedNetherite minecraft.dropped:minecraft.netherite_ingot
@@ -48,3 +53,5 @@ scoreboard objectives add state dummy
 # state 4 = nether practice
 
 execute as @a unless score @s hasSettings matches 0.. run function vinedp:settings/defaults
+scoreboard players set ms ONE_THOUSAND 1000
+scoreboard players set ms FOUR 4
