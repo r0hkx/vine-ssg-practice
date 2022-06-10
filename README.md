@@ -9,3 +9,5 @@ Setup:
   2. Go into the world directory and delete `datapacks/`
   3. Clone the repository
   4. Rename the repository to `datapacks`
+  
+test
