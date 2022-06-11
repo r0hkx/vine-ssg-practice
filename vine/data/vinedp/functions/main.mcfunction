@@ -16,6 +16,13 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=0}] run function v
 # since the exit portal can only be in one spot we just check that one spot
 execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 56 82 nether_portal run function vinedp:nether/finish
 
+# check if player is at nether portal practice spawn
+execute at @e[tag=NetherPortalSpawn] as @p[scores={state=8}] if entity @s[x_rotation=29.3..30.7,y_rotation=69.3..70.7,distance=0] run scoreboard players set @s atNPSpawn 1
+execute at @e[tag=NetherPortalSpawn] as @p[scores={state=8}] unless entity @s[x_rotation=29.3..30.7,y_rotation=69.3..70.7,distance=0] run scoreboard players set @s atNPSpawn 0
+
+# if player is in nether practice and not at spawn, start timer
+execute as @a[scores={state=8, atNPSpawn=0, runningNP=0}] run function vinedp:nether/portal/start
+
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
