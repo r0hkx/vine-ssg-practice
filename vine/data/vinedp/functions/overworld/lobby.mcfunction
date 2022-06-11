@@ -2,5 +2,5 @@
 # green","bold":true,"clickEvent":{"action":"run_command","value":"
 # function vinedp:overworld/lobby"}}'}} 1
 
-execute in minecraft:overworld run tp @s 1000.50 100.00 0.50 0.00 0.00
+tp @s 997.5 97 -4.5 0 0
 scoreboard players set @s state 1

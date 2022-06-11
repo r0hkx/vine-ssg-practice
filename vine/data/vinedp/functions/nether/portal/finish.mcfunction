@@ -6,4 +6,4 @@ function vinedp:util/resetplayer
 function vinedp:nether/portal/lobby
 function vinedp:nether/loadmap
 
-scoreboard players set @s runningNether 0
+scoreboard players set @s runningNP 0
