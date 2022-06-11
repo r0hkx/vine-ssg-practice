@@ -41,9 +41,6 @@ scoreboard objectives add resetWithGrass dummy
 scoreboard objectives add resetWithPickaxe dummy
 scoreboard objectives add resetOWPwDiamond dummy
 scoreboard objectives add resetOWPwPickaxe dummy
-scoreboard objectives add resetNPwNetherit dummy
-scoreboard objectives add resetNPwFNS dummy
-scoreboard objectives add resetNPwPickaxe dummy
 
 scoreboard objectives add hasSettings dummy
 
