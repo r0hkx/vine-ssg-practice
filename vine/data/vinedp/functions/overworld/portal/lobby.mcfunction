@@ -2,5 +2,5 @@
 # green","bold":false,"clickEvent":{"action":"run_command","value":"
 # function vinedp:overworld/portal/lobby"}}'}} 1
 
-tp @s 1000.50 105.00 0.50 0.00 0.00
+tp @s 999.5 105 -3.5 0 0
 scoreboard players set @s state 5
