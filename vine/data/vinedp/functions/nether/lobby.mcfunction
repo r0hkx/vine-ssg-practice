@@ -5,4 +5,4 @@
 
 execute in minecraft:overworld run tp @s 2000.50 100.00 0.50 0.00 0.00
 scoreboard players set @s state 3
-scoreboard players set @s hotbarState 0
+

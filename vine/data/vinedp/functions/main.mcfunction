@@ -16,9 +16,6 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=0}] run function v
 # since the exit portal can only be in one spot we just check that one spot
 execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 56 82 nether_portal run function vinedp:nether/finish
 
-# start overworld portal if conditions are met
-# execute as @a[scores={state=6, openChest=1, runningOWP=0}] run function vinedp:overworld/portal/start
-
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
