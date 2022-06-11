@@ -1,11 +1,20 @@
 function vinedp:timer1t/formattimer
 
+# you cant store strings so you gotta do weird shit to format it properly
+
 # chat message
-tellraw @p ["",{"text":"You completed the ","color":"gray"},{"text":"Full Overworld ","color":"green"},{"text":"in ","color":"gray"},{"score":{"name":"ms","objective":"timerWithAnim"},"color":"aqua","bold":true},{"text":".","color":"aqua","bold":true},{"score":{"name":"ms","objective":"timerDecimal"},"color":"aqua","bold":true}]
+execute if score ms timerDecimal matches 100.. run tellraw @a ["",{"text":"You completed the ","color":"gray"},{"text":"Full Overworld ","color":"green"},{"text":"in ","color":"gray"},{"score":{"name":"ms","objective":"timerWithAnim"},"color":"aqua","bold":true},{"text":".","color":"aqua","bold":true},{"score":{"name":"ms","objective":"timerDecimal"},"color":"aqua","bold":true}]
+execute if score ms timerDecimal matches 50 run tellraw @a ["",{"text":"You completed the ","color":"gray"},{"text":"Full Overworld ","color":"green"},{"text":"in ","color":"gray"},{"score":{"name":"ms","objective":"timerWithAnim"},"color":"aqua","bold":true},{"text":".","color":"aqua","bold":true},{"text":"050","color":"aqua","bold":true}]
+execute if score ms timerDecimal matches 0 run tellraw @a ["",{"text":"You completed the ","color":"gray"},{"text":"Full Overworld ","color":"green"},{"text":"in ","color":"gray"},{"score":{"name":"ms","objective":"timerWithAnim"},"color":"aqua","bold":true},{"text":".","color":"aqua","bold":true},{"text":"000","color":"aqua","bold":true}]
+
 
 # title
-title @a title [{"score":{"name":"ms","objective":"timerWithAnim"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"green"}," Overworld"]
+execute if score ms timerDecimal matches 100.. run title @a title [{"score":{"name":"ms","objective":"timerWithAnim"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"green"}," Overworld"]
+execute if score ms timerDecimal matches 50 run title @a title [{"score":{"name":"ms","objective":"timerWithAnim"},"color":"green"},{"text":".","color":"green"},{"text":"050 Overworld","color":"green"}]
+execute if score ms timerDecimal matches 0 run title @a title [{"score":{"name":"ms","objective":"timerWithAnim"},"color":"green"},{"text":".","color":"green"},{"text":"000 Overworld","color":"green"}]
+
 
 # subtitle
-title @a subtitle [{"score":{"name":"ms","objective":"timerInteger"},"color":"gray"},{"text":".","color":"gray"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"gray"},{"text":" portal light","color":"gray"}]
-
+execute if score ms timerDecimal matches 100.. run title @a subtitle [{"score":{"name":"ms","objective":"timerInteger"},"color":"gray"},{"text":".","color":"gray"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"gray"},{"text":" portal light","color":"gray"}]
+execute if score ms timerDecimal matches 50 run title @a subtitle [{"score":{"name":"ms","objective":"timerInteger"},"color":"gray"},{"text":".","color":"gray"},{"text":"050","color":"gray"},{"text":" portal light","color":"gray"}]
+execute if score ms timerDecimal matches 0 run title @a subtitle [{"score":{"name":"ms","objective":"timerInteger"},"color":"gray"},{"text":".","color":"gray"},{"text":"000","color":"gray"},{"text":" portal light","color":"gray"}]
