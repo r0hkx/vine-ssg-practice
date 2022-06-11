@@ -26,3 +26,6 @@ function vinedp:timer1t/reset
 
 # give items
 function vinedp:nether/inv/load
+
+# clear filler items
+schedule function vinedp:util/clearglass 1t
