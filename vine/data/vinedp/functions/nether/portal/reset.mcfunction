@@ -1,9 +1,7 @@
 function vinedp:timer1t/stop
-function vinedp:timer1t/titlenether
 
 function vinedp:util/resetplayer
 
-function vinedp:nether/lobby
-function vinedp:nether/loadmap
+function vinedp:nether/portal/lobby
 
 scoreboard players set @s runningNP 0
