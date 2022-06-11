@@ -5,4 +5,5 @@
 
 tp @s 2000.5 100 -0.5 0 0
 scoreboard players set @s state 3
+scoreboard players set @s runningNether 0
 
