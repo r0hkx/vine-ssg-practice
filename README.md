@@ -1,16 +1,17 @@
+Created by bdamja and r0hkx
+
 # For Players
 Download the world zip from the **releases** section and then extract it to `.minecraft/saves/` directory to play.
 
 # Features
 * Full Overworld Practice
 * Full Nether Practice
-  * fully customizable inventory
+* Blacksmith Portal Practice
+* Nether Portal Practice
+* Fully Customizable Inventory for Applicable Modes
 * Accurate Timers
 * Multiple Reset Options
 
-## Coming Soon
-* blacksmith portal practice
-* nether portal practice
 
 # For Contributors
 
