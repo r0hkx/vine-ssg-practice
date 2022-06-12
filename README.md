@@ -4,11 +4,12 @@ Download the world zip from the **releases** section and then extract it to `.mi
 # Features
 * Full Overworld Practice
 * Full Nether Practice
+* Blacksmith Portal Practice
+* Nether Portal Practice
 * Fully Customizable Inventory for Applicable Modes
 * Accurate Timers
 * Multiple Reset Options
-* Blacksmith Portal Practice
-* Nether Portal Practice
+
 
 # For Contributors
 
