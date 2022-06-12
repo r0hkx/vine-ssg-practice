@@ -1,5 +1,5 @@
 function vinedp:timer1t/stop
-    function vinedp:timer1t/titlenetherportal
+function vinedp:timer1t/titlenetherportal
 
 function vinedp:util/resetplayer
 
