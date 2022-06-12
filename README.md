@@ -1,3 +1,5 @@
+Created by bdamja and r0hkx
+
 # For Players
 Download the world zip from the **releases** section and then extract it to `.minecraft/saves/` directory to play.
 
