@@ -1,4 +1,4 @@
-tellraw @a "init vinedp"
+tellraw @a "init vinedp testing1"
 
 #gamerules
 gamerule commandBlockOutput false
