@@ -53,6 +53,7 @@ scoreboard objectives add atOWPSpawn dummy
 scoreboard objectives add runningOWP dummy
 scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
+scoreboard objectives add activeNP dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby
