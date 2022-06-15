@@ -69,5 +69,7 @@ execute as @a unless score @s hasSettings matches 0.. run function vinedp:settin
 # set constants
 scoreboard players set ms ONE_THOUSAND 1000
 scoreboard players set ms FOUR 4
+scoreboard players set msB ONE_THOUSAND 1000
+scoreboard players set msB FOUR 4
 
 function vinedp:forceload
