@@ -29,9 +29,6 @@ execute as @a[scores={NPBlockTimer=1}] unless block 1900 55 75 air as @a[scores=
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
-# settings displays
-execute at @a[scores={state=0}] run function vinedp:settings/display
-
 #test for
 execute as @a[scores={deaths=1..}] run function vinedp:testfor/death
 execute as @a[scores={droppedDiamond=1..}] run function vinedp:testfor/diamond
