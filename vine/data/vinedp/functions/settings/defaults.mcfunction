@@ -9,6 +9,7 @@ scoreboard players set @a resetNPwNetherit 1
 scoreboard players set @a resetNPwFNS 1
 scoreboard players set @a resetNPwPickaxe 1
 scoreboard players set @a noGrass 0
+scoreboard players set @a NPBlockTimer 1
 
 scoreboard players set @a hasSettings 1
 

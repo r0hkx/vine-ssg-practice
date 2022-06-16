@@ -42,6 +42,7 @@ scoreboard objectives add resetWithPickaxe dummy
 scoreboard objectives add resetOWPwDiamond dummy
 scoreboard objectives add resetOWPwPickaxe dummy
 scoreboard objectives add noGrass dummy
+scoreboard objectives add NPBlockTimer dummy
 
 scoreboard objectives add hasSettings dummy
 
