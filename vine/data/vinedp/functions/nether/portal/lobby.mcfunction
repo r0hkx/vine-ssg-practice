@@ -6,3 +6,4 @@
 tp @s 1999.5 112 0.5 0 0
 scoreboard players set @s state 7
 scoreboard players set @s runningNP 0
+scoreboard players set @s activeNP 0

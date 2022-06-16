@@ -23,6 +23,9 @@ execute at @e[tag=NetherPortalSpawn] as @p[scores={state=8}] unless entity @s[x_
 # if player is in nether practice and not at spawn, start timer
 execute as @a[scores={state=8, atNPSpawn=0, runningNP=0}] run function vinedp:nether/portal/start
 
+# if block isn't air at the first bridge block start second timer
+execute as @a[scores={NPBlockTimer=1}] unless block 1900 55 75 air as @a[scores={state=8, activeNP=0}] run function vinedp:nether/portal/startb
+
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 

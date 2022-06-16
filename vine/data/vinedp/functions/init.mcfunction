@@ -42,6 +42,7 @@ scoreboard objectives add resetWithPickaxe dummy
 scoreboard objectives add resetOWPwDiamond dummy
 scoreboard objectives add resetOWPwPickaxe dummy
 scoreboard objectives add noGrass dummy
+scoreboard objectives add NPBlockTimer dummy
 
 scoreboard objectives add hasSettings dummy
 
@@ -53,6 +54,7 @@ scoreboard objectives add atOWPSpawn dummy
 scoreboard objectives add runningOWP dummy
 scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
+scoreboard objectives add activeNP dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby
@@ -69,5 +71,7 @@ execute as @a unless score @s hasSettings matches 0.. run function vinedp:settin
 # set constants
 scoreboard players set ms ONE_THOUSAND 1000
 scoreboard players set ms FOUR 4
+scoreboard players set msB ONE_THOUSAND 1000
+scoreboard players set msB FOUR 4
 
 function vinedp:forceload

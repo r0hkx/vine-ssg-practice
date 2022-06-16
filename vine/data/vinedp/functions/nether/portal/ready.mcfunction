@@ -23,6 +23,7 @@ execute if score @s resetNPwNetherit matches 1 run schedule function vinedp:util
 
 #reset timer
 function vinedp:timer1t/reset
+function vinedp:timer1tb/reset
 
 # give items
 function vinedp:nether/portal/inv/load
