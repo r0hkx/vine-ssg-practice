@@ -1,3 +1,5 @@
+# obsolete as of v1.1.2
+
 execute if score @a[limit=1] resetWithDiamond matches 1 run setblock 3 110 5 minecraft:redstone_block
 execute unless score @a[limit=1] resetWithDiamond matches 1 run setblock 3 110 5 minecraft:air
 
