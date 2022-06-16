@@ -19,7 +19,7 @@ function vinedp:nether/loadmap
 title @a clear
 
 # give netherite
-execute if score @s resetNPwNetherit matches 1 run schedule function vinedp:util/givenetherite 1t
+execute if score @s resetWithNetheri matches 1 run schedule function vinedp:util/givenetherite 1t
 
 #reset timer
 function vinedp:timer1t/reset
