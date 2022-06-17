@@ -1,7 +1,7 @@
 function vinedp:timer1t/stop
 function vinedp:timer1t/titlenetherportal
 function vinedp:timer1tb/stop
-function vinedp:timer1tb/titlenetherportal
+execute if score @s NPBlockTimer matches 1 if score @s NPBridge matches 0 run function vinedp:timer1tb/titlenetherportal
 
 function vinedp:util/resetplayer
 
