@@ -33,6 +33,7 @@ scoreboard objectives add droppedPickaxe minecraft.dropped:minecraft.iron_pickax
 scoreboard objectives add usedFNS minecraft.used:minecraft.flint_and_steel
 scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
+scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy
@@ -43,6 +44,8 @@ scoreboard objectives add resetOWPwDiamond dummy
 scoreboard objectives add resetOWPwPickaxe dummy
 scoreboard objectives add noGrass dummy
 scoreboard objectives add NPBlockTimer dummy
+scoreboard objectives add NPBridge dummy
+scoreboard objectives add bridgeRight dummy
 
 scoreboard objectives add hasSettings dummy
 
@@ -55,6 +58,7 @@ scoreboard objectives add runningOWP dummy
 scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
 scoreboard objectives add activeNP dummy
+scoreboard objectives add atNPBSpawn dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby
