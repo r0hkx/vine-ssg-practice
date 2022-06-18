@@ -51,6 +51,7 @@ scoreboard objectives add noGrass dummy
 scoreboard objectives add NPBlockTimer dummy
 scoreboard objectives add NPBridge dummy
 scoreboard objectives add bridgeRight dummy
+scoreboard objectives add OWSplits dummy
 
 scoreboard objectives add hasSettings dummy
 
