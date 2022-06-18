@@ -12,6 +12,8 @@ scoreboard players set @a noGrass 0
 scoreboard players set @a NPBlockTimer 1
 scoreboard players set @a NPBridge 0
 scoreboard players set @a bridgeRight 0
+scoreboard players set @a OWSplits 1
 
 scoreboard players set @a hasSettings 1
 
+scoreboard players set @a ONE_THOUSAND 1000
