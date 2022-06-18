@@ -16,3 +16,4 @@ scoreboard players set @a OWSplits 1
 
 scoreboard players set @a hasSettings 1
 
+scoreboard players set @a ONE_THOUSAND 1000
