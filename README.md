@@ -5,6 +5,7 @@ Download the world zip from the **releases** section and then extract it to `.mi
 
 # Features
 * Full Overworld Practice
+  * Splits for bed break and chest open times
 * Full Nether Practice
 * Blacksmith Portal Practice
 * Nether Portal Practice
