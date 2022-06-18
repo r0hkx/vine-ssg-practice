@@ -4,7 +4,8 @@
 function vinedp:timer1t/formattimer
 function vinedp:timer1t/formatsplit
 
-execute if score @s state matches 2 run scoreboard players add @s chestCount 1
+execute if score @s state matches 2 if score @s chestCount matches 0 run scoreboard players set @s chestCount 1
+execute if score @s state matches 2 if score @s chestCount matches 1 run execute positioned 984 94 27 as @p unless entity @s[distance=..7] run scoreboard players set @s chestCount 2
 
 execute if score @s state matches 2 if score @s chestCount matches 1 if score ms timerDecimal matches 100.. if score @p timerDecimal matches 100.. run tellraw @a ["",{"text":"Blacksmith Chest","color":"#02F8A2"},{"text":" opened at ","color":"gray"},{"score":{"name":"ms","objective":"timerInteger"},"color":"#02F8A2"},{"text":".","color":"#02F8A2"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"#02F8A2"},{"text":" (","color":"gray"},{"score":{"name":"@p","objective":"timerInteger"},"color":"#FEC3FA"},{"text":".","color":"#FEC3FA"},{"score":{"name":"@p","objective":"timerDecimal"},"color":"#FEC3FA"},{"text": " split","color": "#FEC3FA"},{"text":")","color":"gray"}]
 execute if score @s state matches 2 if score @s chestCount matches 1 if score ms timerDecimal matches 100.. if score @p timerDecimal matches 50 run tellraw @a ["",{"text":"Blacksmith Chest","color":"#02F8A2"},{"text":" opened at ","color":"gray"},{"score":{"name":"ms","objective":"timerInteger"},"color":"#02F8A2"},{"text":".","color":"#02F8A2"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"#02F8A2"},{"text":" (","color":"gray"},{"score":{"name":"@p","objective":"timerInteger"},"color":"#FEC3FA"},{"text":".","color":"#FEC3FA"},{"text":"050","color":"#FEC3FA"},{"text": " split","color": "#FEC3FA"},{"text":")","color":"gray"}]
