@@ -26,14 +26,19 @@ scoreboard objectives add timerInteger dummy
 scoreboard objectives add ONE_THOUSAND dummy
 scoreboard objectives add FOUR dummy
 scoreboard objectives add timerWithAnim dummy
+scoreboard objectives add currentSplit dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add droppedDiamond minecraft.dropped:minecraft.diamond
 scoreboard objectives add droppedNetherite minecraft.dropped:minecraft.netherite_ingot
 scoreboard objectives add droppedPickaxe minecraft.dropped:minecraft.iron_pickaxe
 scoreboard objectives add usedFNS minecraft.used:minecraft.flint_and_steel
 scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
+scoreboard objectives add breakBed minecraft.mined:minecraft.magenta_bed
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
+
+scoreboard objectives add bedCount dummy
+scoreboard objectives add chestCount dummy
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy

@@ -47,6 +47,7 @@ execute as @a[scores={droppedPickaxe=1..}] run function vinedp:testfor/pickaxe
 execute as @a[scores={usedFNS=1..}] run function vinedp:testfor/fns
 execute as @a[scores={brokenGrass=1..}] run function vinedp:testfor/grass
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
+execute as @a[scores={breakBed=1..}] run function vinedp:testfor/bed
 execute as @a[scores={openChest=1..}] run function vinedp:testfor/chest
 execute as @a[] at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
