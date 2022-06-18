@@ -13,6 +13,15 @@ iterator = 0
 timerRawScore = ""
 splitRawScore = ""
 
+types_to_count = ["bedCount", "chestCount"]
+type_counting = types_to_count[0]
+
+scoreboard_state = 2
+scoreboard_bedCount = 0
+scoreboard_chestCount = 0
+
+iteration = 0
+
 splits = ["First Bed", "Second Bed", "Third Bed", "Fourth Bed", "Blacksmith Chest", "Flint Chest", "Portal"]
 actions = ['" broken at "', '" opened at "', '" lit at "']
 
@@ -20,16 +29,28 @@ for split in splits:
     match split:
         case "First Bed":
             action_type = actions[0]
+            type_counting = types_to_count[0]
+            iteration = 1
         case "Second Bed":
             action_type = actions[0]
+            type_counting = types_to_count[0]
+            iteration = 2
         case "Third Bed":
             action_type = actions[0]
+            type_counting = types_to_count[0]
+            iteration = 3
         case "Fourth Bed":
             action_type = actions[0]
+            type_counting = types_to_count[0]
+            iteration = 4
         case "Blacksmith Chest":
             action_type = actions[1]
+            type_counting = types_to_count[1]
+            iteration = 1
         case "Flint Chest":
             action_type = actions[1]
+            type_counting = types_to_count[1]
+            iteration = 2
         case "Portal":
             action_type = actions[2]
 
@@ -92,7 +113,8 @@ for split in splits:
                 totalTimerDecimal = '{"text":"000","color":' + teal_hex + '}'
                 splitTimerDecimal = '{"text":"000","color":' + pink_hex + '}'  
 
-        output = 'execute if score ms timerDecimal matches ' + timerRawScore + ' if score @p timerDecimal matches ' + splitRawScore + ' run tellraw @a ["",{"text":' + split_text + ',"color":"#02F8A2"},{"text":' + action_type + ',"color":"gray"},{"score":{"name":"ms","objective":"timerInteger"},"color":' + teal_hex + '},{"text":".","color":' + teal_hex + '},' + totalTimerDecimal +  ',{"text":" (","color":"gray"},{"score":{"name":"@p","objective":"timerInteger"},"color":' + pink_hex +  '},{"text":".","color":' + pink_hex +  '},' + splitTimerDecimal +  ',{"text": " split","color": ' + pink_hex +  '},{"text":")","color":"gray"}]'
+
+        output = 'execute if score @s state matches 2 if score @s ' + type_counting + ' matches ' + str(iteration) + ' if score ms timerDecimal matches ' + timerRawScore + ' if score @p timerDecimal matches ' + splitRawScore + ' run tellraw @a ["",{"text":' + split_text + ',"color":"#02F8A2"},{"text":' + action_type + ',"color":"gray"},{"score":{"name":"ms","objective":"timerInteger"},"color":' + teal_hex + '},{"text":".","color":' + teal_hex + '},' + totalTimerDecimal +  ',{"text":" (","color":"gray"},{"score":{"name":"@p","objective":"timerInteger"},"color":' + pink_hex +  '},{"text":".","color":' + pink_hex +  '},' + splitTimerDecimal +  ',{"text": " split","color": ' + pink_hex +  '},{"text":")","color":"gray"}]'
 
         print(output)
         print()
