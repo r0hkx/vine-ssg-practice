@@ -83,4 +83,6 @@ scoreboard players set ms FOUR 4
 scoreboard players set msB ONE_THOUSAND 1000
 scoreboard players set msB FOUR 4
 
+scoreboard players set @p ONE_THOUSAND 1000
+
 function vinedp:forceload
