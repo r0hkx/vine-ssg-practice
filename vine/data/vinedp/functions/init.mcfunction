@@ -25,6 +25,7 @@ scoreboard objectives add timerDecimal dummy
 scoreboard objectives add timerInteger dummy
 scoreboard objectives add ONE_THOUSAND dummy
 scoreboard objectives add FOUR dummy
+scoreboard objectives add FOUR_THOUSAND dummy
 scoreboard objectives add timerWithAnim dummy
 scoreboard objectives add currentSplit dummy
 scoreboard objectives add deaths deathCount
@@ -83,7 +84,25 @@ scoreboard players set ms ONE_THOUSAND 1000
 scoreboard players set ms FOUR 4
 scoreboard players set msB ONE_THOUSAND 1000
 scoreboard players set msB FOUR 4
-
 scoreboard players set @p ONE_THOUSAND 1000
+scoreboard players set @p FOUR_THOUSAND 4000
+
+scoreboard objectives add firstBedPB dummy
+scoreboard objectives add bsChestPB dummy
+scoreboard objectives add secondBedPB dummy
+scoreboard objectives add thirdBedPB dummy
+scoreboard objectives add fourthBedPB dummy
+scoreboard objectives add flintChestPB dummy
+scoreboard objectives add owpPB dummy
+scoreboard objectives add owPB dummy
+
+scoreboard objectives add firstBedSOB dummy
+scoreboard objectives add bsChestSOB dummy
+scoreboard objectives add secondBedSOB dummy
+scoreboard objectives add thirdBedSOB dummy
+scoreboard objectives add fourthBedSOB dummy
+scoreboard objectives add flintChestSOB dummy
+scoreboard objectives add owpSOB dummy
+scoreboard objectives add owSOB dummy
 
 function vinedp:forceload
