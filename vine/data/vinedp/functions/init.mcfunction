@@ -52,6 +52,8 @@ scoreboard objectives add NPBlockTimer dummy
 scoreboard objectives add NPBridge dummy
 scoreboard objectives add bridgeRight dummy
 scoreboard objectives add OWSplits dummy
+scoreboard objectives add OWLeftSpawn dummy
+scoreboard objectives add OWCustomSpawn dummy
 
 scoreboard objectives add hasSettings dummy
 
