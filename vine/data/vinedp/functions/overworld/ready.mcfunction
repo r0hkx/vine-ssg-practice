@@ -10,10 +10,9 @@ scoreboard players set @s state 2
 function vinedp:util/resetplayer
 
 # tp player to overworld practice spawn
-execute as @e[nbt={Tags:["OWLeftSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
-execute as @e[nbt={Tags:["OWRightSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
-
-execute as @e[nbt={Tags:["OWCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s OWLeftSpawn matches 1 as @e[nbt={Tags:["OWLeftSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s OWLeftSpawn matches 0 as @e[nbt={Tags:["OWRightSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s OWCustomSpawn matches 1 as @e[nbt={Tags:["OWCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
 
 # generate map
 function vinedp:overworld/loadmap

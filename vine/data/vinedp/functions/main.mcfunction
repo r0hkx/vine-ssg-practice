@@ -1,6 +1,8 @@
 # check if player is at overworld spawn
-execute at @e[tag=OverworldSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
-execute at @e[tag=OverworldSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
+execute as @a[scores={OWLeftSpawn=1}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
+execute as @a[scores={OWLeftSpawn=1}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
+execute as @a[scores={OWLeftSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
+execute as @a[scores={OWLeftSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
 
 # if player is in ow practice and not at spawn, start timer
 execute as @a[scores={state=2, atOWSpawn=0, runningOW=0}] run function vinedp:overworld/start
