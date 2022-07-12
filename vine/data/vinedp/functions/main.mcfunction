@@ -1,8 +1,13 @@
 # check if player is at overworld spawn
-execute as @a[scores={OWLeftSpawn=1}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
-execute as @a[scores={OWLeftSpawn=1}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
-execute as @a[scores={OWLeftSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
-execute as @a[scores={OWLeftSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
+execute as @a[scores={OWLeftSpawn=1, OWCustomSpawn=0}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
+execute as @a[scores={OWLeftSpawn=1, OWCustomSpawn=0}] at @e[tag=OWLeftSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
+execute as @a[scores={OWLeftSpawn=0, OWCustomSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] if entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 1
+execute as @a[scores={OWLeftSpawn=0, OWCustomSpawn=0}] at @e[tag=OWRightSpawn] as @p[scores={state=2}] unless entity @s[x_rotation=-0.7..0.7,y_rotation=-0.7..0.7,distance=0] run scoreboard players set @s atOWSpawn 0
+
+execute as @a[scores={OWCustomSpawn=1}] at @e[tag=OWCustomSpawn] as @p[scores={state=2}] if entity @s[distance=0] run scoreboard players set @s atOWSpawn 1
+execute as @a[scores={OWCustomSpawn=1}] at @e[tag=OWCustomSpawn] as @p[scores={state=2}] unless entity @s[distance=0] run scoreboard players set @s atOWSpawn 0
+execute as @a[scores={OWCustomSpawn=1}] at @e[tag=OWCustomSpawn] as @p[scores={state=2}] at @s positioned ^ ^ ^1 rotated as @e[tag=OWCustomSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atOWSpawn 0
+
 
 # if player is in ow practice and not at spawn, start timer
 execute as @a[scores={state=2, atOWSpawn=0, runningOW=0}] run function vinedp:overworld/start
@@ -54,6 +59,9 @@ execute as @a[scores={openChest=1..}] run function vinedp:testfor/chest
 execute as @a[] at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
 execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
+execute as @a[scores={droppedLily=1..}] run function vinedp:testfor/lily
+execute as @a[scores={droppedBarrier=1..}] run function vinedp:testfor/barrier
+execute as @a[scores={droppedCompass=1..}] run function vinedp:testfor/compass
 
 # set spawn point
 spawnpoint @a 0 100 0
