@@ -5,3 +5,5 @@
 tp @s 997.5 97 -4.5 0 0
 scoreboard players set @s state 1
 scoreboard players set @s runningOW 0
+
+function vinedp:overworld/splits/updatepbs
