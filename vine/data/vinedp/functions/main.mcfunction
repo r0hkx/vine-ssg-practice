@@ -32,12 +32,12 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 
 execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
 execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
 execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherPortalSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
-#       start with bridge 
+#       start with bridge
 #       intentionally don't check for moving camera since people might want to adjust it for bridging
-execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] if entity @s[distance=..0.25] run scoreboard players set @s atNPBSpawn 1
-execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] unless entity @s[distance=..0.25] run scoreboard players set @s atNPBSpawn 0
-execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpawnRight] if entity @s[distance=..0.25] run scoreboard players set @s atNPBSpawn 1
-execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpawnRight] unless entity @s[distance=..0.25] run scoreboard players set @s atNPBSpawn 0
+execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] if entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 1
+execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] unless entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 0
+execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpawnRight] if entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 1
+execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpawnRight] unless entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 0
 #   if player is in nether practice and not at spawn, start timer
 execute as @a[scores={state=8, atNPSpawn=0, runningNP=0}] run function vinedp:nether/portal/start
 #   if block isn't air at the first bridge block start second timer (start without bridge)
