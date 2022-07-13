@@ -4,4 +4,4 @@ function vinedp:util/resetplayer
 
 function vinedp:overworld/portal/lobby
 
-scoreboard players set @s runningOWP 0
+scoreboard players set @s runningNP 0

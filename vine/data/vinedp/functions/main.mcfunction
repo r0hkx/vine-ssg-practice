@@ -29,9 +29,9 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 
 
 # nether portal
 #   check if player is at their nether portal spawn
-execute as @p[scores={state=8}] at @e[tag=NetherPortalSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
-execute as @p[scores={state=8}] at @e[tag=NetherPortalSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
-execute as @p[scores={state=8}] at @e[tag=NetherPortalSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherPortalSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
+execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
+execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
+execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherPortalSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
 #       start with bridge 
 #       intentionally don't check for moving camera since people might want to adjust it for bridging
 execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] if entity @s[distance=..0.25] run scoreboard players set @s atNPBSpawn 1
