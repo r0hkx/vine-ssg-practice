@@ -15,6 +15,7 @@ scoreboard players set @a bridgeRight 0
 scoreboard players set @a OWSplits 1
 scoreboard players set @a OWLeftSpawn 1
 scoreboard players set @a OWCustomSpawn 0
+scoreboard players set @a OWPCustomSpawn 0
 
 scoreboard players set @a hasSettings 1
 
