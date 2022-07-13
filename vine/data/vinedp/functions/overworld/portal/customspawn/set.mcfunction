@@ -9,5 +9,4 @@ function vinedp:util/killitems
 
 function vinedp:overworld/portal/customspawn/giveitem/lily_pad
 function vinedp:overworld/portal/customspawn/giveitem/compass
-function vinedp:overworld/portal/customspawn/giveitem/netherite
 function vinedp:overworld/portal/customspawn/giveitem/barrier
