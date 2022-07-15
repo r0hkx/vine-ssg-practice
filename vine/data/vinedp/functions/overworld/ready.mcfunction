@@ -26,3 +26,6 @@ execute if score @s resetWithDiamond matches 1 run schedule function vinedp:util
 #reset timer
 function vinedp:timer1t/reset
 
+#potential warning
+execute if score @s savePBs matches 0 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is disabled.","color":"red"}]
+
