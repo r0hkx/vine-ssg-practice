@@ -88,11 +88,11 @@ def print_output(type):
        execute_if_matches = 'execute if score pb timerDecimal matches '
        datamerge = ' run data merge block '
        text_a = ' {Text2:\'[{"text":"'
-       text_b_pbs = '","color":"#02F8A2"},{"text":": ","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#E4BE3C"},{"text":".","color":"#E4BE3C"},'
-       text_b_sob = '| ","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#ff6d38"},{"text":".","color":"#ff6d38"},'
+       text_b_pbs = '","color":"#02F8A2"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#E4BE3C"},{"text":".","color":"#E4BE3C"},'
+       text_b_sob = '","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#ff6d38"},{"text":".","color":"#ff6d38"},'
        text_c = '"}]\'}'
         
-       outputPBs = execute_if_matches + decimal_format + datamerge + pbcoords + text_a + split + text_b_pbs + decimal_json + sun_orange_hex + text_c
+       outputPBs = execute_if_matches + decimal_format + datamerge + pbcoords + text_a + text_b_pbs + decimal_json + sun_orange_hex + text_c
        outputSOB = execute_if_matches + decimal_format + datamerge + sobcoords + text_a + text_b_sob + decimal_json + blood_orange_hex + text_c
         
        if type == 'PBs':
