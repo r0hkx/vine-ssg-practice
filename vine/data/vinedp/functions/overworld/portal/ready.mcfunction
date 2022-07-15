@@ -10,7 +10,8 @@ scoreboard players set @s state 6
 function vinedp:util/resetplayer
 
 # tp player to overworld practice spawn
-execute as @e[nbt={Tags:["BlacksmithPortalSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s OWPCustomSpawn matches 0 as @e[nbt={Tags:["BlacksmithPortalSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s OWPCustomSpawn matches 1 as @e[nbt={Tags:["OWPortalCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
 
 # generate map
 function vinedp:overworld/loadmap

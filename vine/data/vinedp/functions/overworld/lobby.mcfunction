@@ -7,3 +7,5 @@ scoreboard players set @s state 1
 scoreboard players set @s runningOW 0
 
 function vinedp:overworld/splits/updatepbs
+clear @s
+gamemode survival @s

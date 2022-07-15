@@ -6,3 +6,4 @@ effect give @s minecraft:fire_resistance 10 0 true
 scoreboard players set @s bedCount 0
 scoreboard players set @s chestCount 0
 clear @s
+function vinedp:util/killitems

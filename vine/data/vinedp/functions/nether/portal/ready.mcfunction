@@ -10,7 +10,8 @@ scoreboard players set @s state 8
 function vinedp:util/resetplayer
 
 # tp player to nether practice spawn
-execute if score @s NPBridge matches 0 as @e[nbt={Tags:["NetherPortalSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s NPBridge matches 0 if score @s NPCustomSpawn matches 0 as @e[nbt={Tags:["NetherPortalSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s NPBridge matches 0 if score @s NPCustomSpawn matches 1 as @e[nbt={Tags:["NPCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
 execute if score @s NPBridge matches 1 if score @s bridgeRight matches 0 as @e[nbt={Tags:["NPBridgeSpawnLeft"]}] at @s run teleport @p ~ ~ ~ ~ ~
 execute if score @s NPBridge matches 1 if score @s bridgeRight matches 1 as @e[nbt={Tags:["NPBridgeSpawnRight"]}] at @s run teleport @p ~ ~ ~ ~ ~
 

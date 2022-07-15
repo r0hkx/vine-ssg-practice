@@ -1,1 +1,1 @@
-tellraw @a {"text":"test","color":"green"}
+tellraw @a {"text":"test test","color":"green"}

@@ -37,6 +37,9 @@ scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 scoreboard objectives add breakBed minecraft.mined:minecraft.magenta_bed
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
+scoreboard objectives add droppedLily minecraft.dropped:minecraft.lily_pad
+scoreboard objectives add droppedBarrier minecraft.dropped:minecraft.barrier
+scoreboard objectives add droppedCompass minecraft.dropped:minecraft.compass
 
 scoreboard objectives add bedCount dummy
 scoreboard objectives add chestCount dummy
@@ -53,6 +56,10 @@ scoreboard objectives add NPBlockTimer dummy
 scoreboard objectives add NPBridge dummy
 scoreboard objectives add bridgeRight dummy
 scoreboard objectives add OWSplits dummy
+scoreboard objectives add OWLeftSpawn dummy
+scoreboard objectives add OWCustomSpawn dummy
+scoreboard objectives add OWPCustomSpawn dummy
+scoreboard objectives add NPCustomSpawn dummy
 
 scoreboard objectives add hasSettings dummy
 
