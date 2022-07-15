@@ -103,6 +103,15 @@ scoreboard objectives add flintChestPB dummy
 scoreboard objectives add owpPB dummy
 scoreboard objectives add owPB dummy
 
+scoreboard objectives add firstBedBP dummy
+scoreboard objectives add bsChestBP dummy
+scoreboard objectives add secondBedBP dummy
+scoreboard objectives add thirdBedBP dummy
+scoreboard objectives add fourthBedBP dummy
+scoreboard objectives add flintChestBP dummy
+scoreboard objectives add owpBP dummy
+scoreboard objectives add owBP dummy
+
 scoreboard objectives add firstBedSOB dummy
 scoreboard objectives add bsChestSOB dummy
 scoreboard objectives add secondBedSOB dummy
