@@ -19,4 +19,4 @@ scoreboard players operation @p owpSOB = @p flintChestSOB
 scoreboard players operation @p owpSOB += @p owpPB
 
 scoreboard players operation @p owSOB = @p owpSOB
-scoreboard players operation @p owSOB += @p FOUR_THOUSAND
+# scoreboard players operation @p owSOB += @p FOUR_THOUSAND

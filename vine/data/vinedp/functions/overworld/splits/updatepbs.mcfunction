@@ -195,6 +195,7 @@ execute if score pb timerDecimal matches 0 run data merge block 997 112 -7 {Text
 
 scoreboard players operation pb timerInteger = @p owSOB
 scoreboard players operation pb timerInteger /= @p ONE_THOUSAND
+scoreboard players operation pb timerInteger += ms FOUR
 scoreboard players operation pb timerDecimal = @p owSOB
 scoreboard players operation pb timerDecimal %= @p ONE_THOUSAND
 execute if score pb timerDecimal matches 100.. run data merge block 996 112 -7 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#FF0000"},{"text":".","color":"#FF0000"},{"score":{"name":"pb","objective":"timerDecimal"},"color":"#FF0000"}]'}
