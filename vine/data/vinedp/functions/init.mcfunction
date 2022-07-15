@@ -60,6 +60,7 @@ scoreboard objectives add OWLeftSpawn dummy
 scoreboard objectives add OWCustomSpawn dummy
 scoreboard objectives add OWPCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
+scoreboard objectives add savePBs dummy
 
 scoreboard objectives add hasSettings dummy
 
