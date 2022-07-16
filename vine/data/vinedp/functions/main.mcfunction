@@ -66,3 +66,6 @@ spawnpoint @a 0 100 0
 
 # if the player is in main lobby hide timer
 execute at @a[scores={state=0}] run function vinedp:timer1t/hide
+
+# constantly update the pbs while this is true
+execute at @a[scores={updatePBs=1}] run function vinedp:overworld/splits/updatepbs
