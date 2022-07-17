@@ -57,7 +57,11 @@ def move_files():
 
   shutil.copyfile(scoreboard_dat_src, scoreboard_dat_dst) # move the scoreboard scores over
   shutil.copyfile(command_storage_minecraft_dat_src, command_storage_minecraft_dat_dst) # move the inventory setups over
-  shutil.move(str(new_world_path), str(SAVES_PATH) + "/" + str(new_world_dirname)) # move the world out to saves
+  try:
+    shutil.move(str(new_world_path), str(SAVES_PATH) + "/" + str(new_world_dirname)) # move the world out to saves
+  except shutil.Error:
+    print("Moving the world to the saves directory failed. Are the names of the directories of the new and old worlds identical")
+
   os.rmdir(TMP_PATH) # delete the tmp folder
   print("Success!")
 
