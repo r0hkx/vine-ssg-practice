@@ -7,8 +7,8 @@ data modify storage store3 Inventory set from entity @s Inventory
 data modify block -1003 100 -991 Items set from storage minecraft:store3 Inventory
 
 # make offhand work by putting offhand item into another shulker box
-data modify block -1005 101 -993 Items[{Slot: 0b}].id set from storage store Inventory[{Slot: -106b}].id
-data modify block -1005 101 -993 Items[{Slot: 0b}].Count set from storage store Inventory[{Slot: -106b}].Count
+data modify block -1005 101 -993 Items[{Slot: 0b}].id set from storage store3 Inventory[{Slot: -106b}].id
+data modify block -1005 101 -993 Items[{Slot: 0b}].Count set from storage store3 Inventory[{Slot: -106b}].Count
 
 gamemode survival @s
 
