@@ -7,3 +7,5 @@ scoreboard players set @s bedCount 0
 scoreboard players set @s chestCount 0
 clear @s
 function vinedp:util/killitems
+function vinedp:util/enablefeedback
+scoreboard players set @s updatePBs 0

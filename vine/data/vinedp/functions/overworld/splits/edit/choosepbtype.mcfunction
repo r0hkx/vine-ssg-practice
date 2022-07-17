@@ -1,0 +1,12 @@
+# prompt the user which pb type to edit
+# for clarity: "pb types" are things like best splits vs. best paces, "split types" are things like first bed, flint chest, etc.
+
+tellraw @a [{"text":"\n\n---------------------------------------","color":"gray"}]
+tellraw @a ["",{"text":"What personal best time would you like to edit?","color":"aqua"},{"text":" [Click to Select]\n","color":"green"}]
+tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestsplits"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best splits"}},{"text":" ","color":"white","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestsplits"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best splits"}},{"text":"Best Splits","color":"#FDE7A5","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestsplits"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best splits"}}]
+tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestpaces"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best paces"}},{"text":" ","color":"white","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestpaces"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best paces"}},{"text":"Best Paces","color":"#ffaf74","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editbestpaces"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your best paces"}}]
+tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editsumofbest"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your sum of best"}},{"text":" ","color":"white","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editsumofbest"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your sum of best"}},{"text":"Sum of Best","color":"#ff8c8c","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/editsumofbest"},"hoverEvent":{"action":"show_text","contents":"Edit a time from your sum of best"}}]
+
+
+# since it will flood chat otherwise
+gamerule sendCommandFeedback false

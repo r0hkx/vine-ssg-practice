@@ -95,6 +95,7 @@ scoreboard players set msB FOUR 4
 scoreboard players set @p ONE_THOUSAND 1000
 scoreboard players set @p FOUR_THOUSAND 4000
 
+# add personal best splits, best paces, and sum of best
 scoreboard objectives add firstBedPB dummy
 scoreboard objectives add bsChestPB dummy
 scoreboard objectives add secondBedPB dummy
@@ -121,5 +122,10 @@ scoreboard objectives add fourthBedSOB dummy
 scoreboard objectives add flintChestSOB dummy
 scoreboard objectives add owpSOB dummy
 scoreboard objectives add owSOB dummy
+
+# add editing flags for splits
+
+scoreboard objectives add pbType dummy
+scoreboard objectives add updatePBs dummy
 
 function vinedp:forceload
