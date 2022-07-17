@@ -30,3 +30,6 @@ function vinedp:overworld/portal/inv/load
 
 # clear filler items
 schedule function vinedp:util/clearglass 1t
+
+#potential warning
+execute if score @s suppressWarnings matches 0 if score @s savePBs matches 0 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is disabled.","color":"red"}]
