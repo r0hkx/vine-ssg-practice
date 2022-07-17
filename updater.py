@@ -42,6 +42,7 @@ def move_files():
   if dirname == str(new_world_dirname): # if they have the same name, 
     dirname = get_rename(new_world_dirname, iteration) # get the new name of the new world
     os.rename(str(new_world_path), str(TMP_PATH) + dirname) # rename the directory
+    new_world_dirname = dirname
     new_world_path = Path(TMP_PATH + dirname) # reassign
 
   # continue regardless
