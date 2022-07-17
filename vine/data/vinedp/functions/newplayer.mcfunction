@@ -4,3 +4,5 @@ title @a title ["",{"text":"Any Render Distance Works","color":"#FF0300"}]
 
 function vinedp:settings/defaults
 function vinedp:spawn
+function vinedp:overworld/splits/updatepbs
+
