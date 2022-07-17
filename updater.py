@@ -5,8 +5,8 @@ import zipfile
 import shutil
 
 URL = "https://github.com/r0hkx/vine-ssg-practice/releases/download/current/Vine.SSG.Practice.current-1.16.5.zip"
-CURRENT_PATH = Path(os.path.realpath(__file__))
-WORLD_PATH = CURRENT_PATH.parent.parent.absolute()
+CURRENT_PATH = Path(os.getcwd())
+WORLD_PATH = CURRENT_PATH.parent.absolute()
 SAVES_PATH = WORLD_PATH.parent.absolute()
 ZIP_PATH = str(SAVES_PATH) + "/VineSSGLatest.zip"
 TMP_PATH = str(SAVES_PATH) + "/tmp/"
