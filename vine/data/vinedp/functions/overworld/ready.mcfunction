@@ -32,3 +32,9 @@ execute if score @s suppressWarnings matches 0 if score @s OWSplits matches 1 if
 
 #hide pb indicators
 function vinedp:overworld/splits/hide_pb_indicators
+
+# give items
+function vinedp:overworld/inv/load
+
+# clear filler items
+schedule function vinedp:util/clearglass 1t
