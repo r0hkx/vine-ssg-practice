@@ -19,7 +19,7 @@ execute unless score @s OWPCustomSpawn matches 0.. run scoreboard players set @a
 execute unless score @s NPCustomSpawn matches 0.. run scoreboard players set @a NPCustomSpawn 0
 execute unless score @s savePBs matches 0.. run scoreboard players set @a savePBs 1
 execute unless score @s suppressWarnings matches 0.. run scoreboard players set @a suppressWarnings 0
-execute unless score @s towardsYou matches 0.. run scoreboard players set @a towardsYou 0
+execute unless score @s optmalItemMotion matches 0.. run scoreboard players set @a optmalItemMotion 0
 
 scoreboard players set @a hasSettings 1
 
