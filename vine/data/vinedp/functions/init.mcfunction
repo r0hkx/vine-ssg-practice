@@ -62,6 +62,7 @@ scoreboard objectives add OWPCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
+scoreboard objectives add towardsYou dummy
 
 scoreboard objectives add hasSettings dummy
 
