@@ -35,6 +35,8 @@ scoreboard objectives add droppedPickaxe minecraft.dropped:minecraft.iron_pickax
 scoreboard objectives add usedFNS minecraft.used:minecraft.flint_and_steel
 scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 scoreboard objectives add breakBed minecraft.mined:minecraft.magenta_bed
+scoreboard objectives add breakLBlueBed minecraft.mined:minecraft.light_blue_bed
+scoreboard objectives add breakCobblestone minecraft.mined:minecraft.cobblestone
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
 scoreboard objectives add droppedLily minecraft.dropped:minecraft.lily_pad
@@ -62,6 +64,7 @@ scoreboard objectives add OWPCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
+scoreboard objectives add optmalItemMotion dummy
 
 scoreboard objectives add hasSettings dummy
 
