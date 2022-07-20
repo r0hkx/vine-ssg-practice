@@ -54,7 +54,8 @@ execute as @a[scores={droppedBarrier=1..}] run function vinedp:testfor/barrier
 execute as @a[scores={droppedCompass=1..}] run function vinedp:testfor/compass
 execute as @a[scores={brokenGrass=1..}] run function vinedp:testfor/grass
 execute as @a[scores={breakBed=1..}] run function vinedp:testfor/bed
-execute as @a[scores={breakLBlueBed=1..}] run function vinedp:testfor/lbluebed
+execute as @a[scores={breakLBlueBed=1..}] run function vinedp:testfor/lightbluebed
+execute as @a[scores={breakCobblestone=1..}] run function vinedp:testfor/cobblestone
 execute as @a[scores={usedFNS=1..}] run function vinedp:testfor/fns
 execute as @a[scores={openChest=1..}] run function vinedp:testfor/chest
 execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
