@@ -11,13 +11,13 @@ scoreboard players set @p currentSplit 0
 # custom loot table for light blue bed makes it not drop anything, so we can summon
 
 # first bed:
-execute positioned 998.5 96.0 12.5 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.1,0.2,0.1],PickupDelay:10s}
+execute positioned 998.25 96.75 12.75 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.1,0.2,0.06],PickupDelay:10s}
 
 # second bed:
-execute positioned 965.5 95.0 43.5 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.1,0.2,-0.1],PickupDelay:10s}
+execute positioned 965.75 95.75 43.25 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.1,0.2,-0.1],PickupDelay:10s}
 
 # third bed:
-execute positioned 943.5 97.0 53.5 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.08,0.2,-0.1],PickupDelay:10s}
+execute positioned 943.25 97.75 53.25 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[-0.05,0.2,-0.1],PickupDelay:10s}
 
 # fourth bed:
-execute positioned 942.5 98.0 41.5 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[0.08,0.2,0.1],PickupDelay:10s}
+execute positioned 942.75 98.75 41.75 run execute as @p[distance=..4.5] run summon item ~ ~ ~ {Item:{id:"minecraft:light_blue_bed",Count:1b},Motion:[0.05,0.2,0.1],PickupDelay:10s}
