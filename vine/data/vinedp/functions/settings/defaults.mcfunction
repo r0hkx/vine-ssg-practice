@@ -12,7 +12,7 @@ execute unless score @s noGrass matches 0.. run scoreboard players set @a noGras
 execute unless score @s NPBlockTimer matches 0.. run scoreboard players set @a NPBlockTimer 1
 execute unless score @s NPBridge matches 0.. run scoreboard players set @a NPBridge 0
 execute unless score @s bridgeRight matches 0.. run scoreboard players set @a bridgeRight 0
-execute unless score @s OWSplits matches 0.. run scoreboard players set @a OWSplits 1
+execute unless score @s splits matches 0.. run scoreboard players set @a splits 1
 execute unless score @s OWLeftSpawn matches 0.. run scoreboard players set @a OWLeftSpawn 1
 execute unless score @s OWCustomSpawn matches 0.. run scoreboard players set @a OWCustomSpawn 0
 execute unless score @s OWPCustomSpawn matches 0.. run scoreboard players set @a OWPCustomSpawn 0

@@ -8,4 +8,6 @@ scoreboard players set @s chestCount 0
 clear @s
 function vinedp:util/killitems
 function vinedp:util/enablefeedback
+function vinedp:util/setcobweb
 scoreboard players set @s updatePBs 0
+gamerule fallDamage false

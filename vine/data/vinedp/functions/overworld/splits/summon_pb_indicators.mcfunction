@@ -9,7 +9,7 @@ summon armor_stand ~-.2 ~.6 ~-4.97 {Tags:["flintChestLabel"],CustomName:'[{"text
 summon armor_stand ~-.2 ~.3 ~-5.23 {Tags:["owpLabel"],CustomName:'[{"text":"Portal","color":"#46bdc6"},{"text":":","color":"gray"}]',CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
 summon armor_stand ~-.2 ~ ~-4.99 {Tags:["owLabel"],CustomName:'[{"text":"Overworld","color":"#2DBA4E"},{"text":":","color":"gray"}]',CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
 
-summon armor_stand ~-.2 ~2.4 ~-3.67 {Tags:["owPBsLabel"],CustomName:'[{"text":"Best Splits","color":"#fde7a5"},{"text":":","color":"gray"}]',CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
+summon armor_stand ~-.2 ~2.4 ~-3.67 {Tags:["owPBsLabel"],CustomName:'[{"text":"Best splits","color":"#fde7a5"},{"text":":","color":"gray"}]',CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
 summon armor_stand ~-.2 ~2.1 ~-3.67 {Tags:["firstBedPB"],CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
 summon armor_stand ~-.2 ~1.8 ~-3.67 {Tags:["bsChestPB"],CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
 summon armor_stand ~-.2 ~1.5 ~-3.67 {Tags:["secondBedPB"],CustomNameVisible:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Small:1b,Marker:1b}
