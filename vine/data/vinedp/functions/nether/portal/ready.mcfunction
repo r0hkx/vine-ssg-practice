@@ -35,4 +35,3 @@ function vinedp:nether/portal/inv/load
 # clear filler items
 schedule function vinedp:util/clearglass 1t
 
-schedule clear vinedp:util/deletecobweb
