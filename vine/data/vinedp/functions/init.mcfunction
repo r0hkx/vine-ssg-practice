@@ -57,7 +57,7 @@ scoreboard objectives add noGrass dummy
 scoreboard objectives add NPBlockTimer dummy
 scoreboard objectives add NPBridge dummy
 scoreboard objectives add bridgeRight dummy
-scoreboard objectives add OWSplits dummy
+scoreboard objectives add splits dummy
 scoreboard objectives add OWLeftSpawn dummy
 scoreboard objectives add OWCustomSpawn dummy
 scoreboard objectives add OWPCustomSpawn dummy
@@ -76,7 +76,8 @@ scoreboard objectives add atOWPSpawn dummy
 scoreboard objectives add runningOWP dummy
 scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
-scoreboard objectives add activeNP dummy
+scoreboard objectives add firstBlock dummy
+scoreboard objectives add firstObsidian dummy
 scoreboard objectives add atNPBSpawn dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby

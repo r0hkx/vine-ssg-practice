@@ -1,6 +1,6 @@
 # pbType 1 = best split, type 2 = best pace
 
-execute if score @s pbType matches 1 run tellraw @a [{"text":"--------------Best-Splits----------------","color":"gray"}]
+execute if score @s pbType matches 1 run tellraw @a [{"text":"--------------Best-splits----------------","color":"gray"}]
 execute if score @s pbType matches 2 run tellraw @a [{"text":"--------------Best-Paces---------------","color":"gray"}]
 
 # prompt with each split type
@@ -14,5 +14,5 @@ tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command"
 tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/owp"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld portal time"}},{"text":" ","color":"white","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/owp"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld portal time"}},{"text":"Portal","color":"#46BDC6","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/owp"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld portal time"}}]
 tellraw @a ["",{"text":"»","color":"green","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/ow"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld time"}},{"text":" ","color":"white","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/ow"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld time"}},{"text":"Overworld","color":"#2DBA4E","clickEvent":{"action":"run_command","value":"/function vinedp:overworld/splits/edit/ow"},"hoverEvent":{"action":"show_text","contents":"Edit your overworld time"}}]
 
-execute if score @s pbType matches 1 run tellraw @a [{"text":"--------------Best-Splits----------------","color":"gray"}]
+execute if score @s pbType matches 1 run tellraw @a [{"text":"--------------Best-splits----------------","color":"gray"}]
 execute if score @s pbType matches 2 run tellraw @a [{"text":"--------------Best-Paces---------------","color":"gray"}]

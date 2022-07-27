@@ -29,9 +29,15 @@ execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 
 
 # nether portal
 #   check if player is at their nether portal spawn
-execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
-execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
-execute as @p[scores={state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherPortalSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
+#       default spawn
+execute as @p[scores={NPCustomSpawn=0, state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
+execute as @p[scores={NPCustomSpawn=0, state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
+execute as @p[scores={NPCustomSpawn=0, state=8, NPBridge=0}] at @e[tag=NetherPortalSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherPortalSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
+#       custom spawn
+execute as @p[scores={NPCustomSpawn=1, state=8, NPBridge=0}] at @e[tag=NPCustomSpawn] if entity @s[distance=0] run scoreboard players set @s atNPSpawn 1
+execute as @p[scores={NPCustomSpawn=1, state=8, NPBridge=0}] at @e[tag=NPCustomSpawn] unless entity @s[distance=0] run scoreboard players set @s atNPSpawn 0
+execute as @p[scores={NPCustomSpawn=1, state=8, NPBridge=0}] at @e[tag=NPCustomSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NPCustomSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNPSpawn 0
+
 #       start with bridge
 #       intentionally don't check for moving camera since people might want to adjust it for bridging
 execute as @p[scores={state=8, NPBridge=1, bridgeRight=0}] at @e[tag=NPBridgeSpawnLeft] if entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 1
@@ -40,8 +46,6 @@ execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpa
 execute as @p[scores={state=8, NPBridge=1, bridgeRight=1}] at @e[tag=NPBridgeSpawnRight] unless entity @s[distance=..0.25] run scoreboard players set @s atNPSpawn 0
 #   if player is in nether practice and not at spawn, start timer
 execute as @a[scores={state=8, atNPSpawn=0, runningNP=0}] run function vinedp:nether/portal/start
-#   if block isn't air at the first bridge block start second timer (start without bridge)
-execute as @a[scores={NPBlockTimer=1, NPBridge=0}] unless block 1900 55 75 air as @a[scores={state=8, activeNP=0}] run function vinedp:nether/portal/startb
 
 #test for
 execute as @a[scores={deaths=1..}] run function vinedp:testfor/death
@@ -62,6 +66,8 @@ execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
+execute as @a unless block 1900 55 75 air as @a[scores={firstBlock=0}] run function vinedp:nether/splits/firstblock
+execute as @a if block 1900 55 81 obsidian as @a[scores={firstObsidian=0}] run function vinedp:nether/splits/firstobsidian
 
 # set spawn point
 spawnpoint @a 0 100 0
