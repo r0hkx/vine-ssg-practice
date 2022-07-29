@@ -11,4 +11,4 @@ scoreboard players operation @p npSOB = @p firstObbySOB
 scoreboard players operation @p npSOB += @p npPB
 
 scoreboard players operation @p netherSOB = @p npSOB
-scoreboard players operation @p netherSOB += @p netherPB
+

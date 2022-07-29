@@ -24,6 +24,9 @@ execute if score @s resetWithNetheri matches 1 run schedule function vinedp:util
 #reset timer
 function vinedp:timer1t/reset
 
+#hide pb indicators
+function vinedp:nether/splits/hide_pb_indicators
+
 # give items
 function vinedp:nether/inv/load
 

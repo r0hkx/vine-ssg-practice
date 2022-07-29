@@ -1,0 +1,32 @@
+# kill the pb indicators
+
+kill @e[tag=vineBreakLabel]
+kill @e[tag=floorVineLabel]
+kill @e[tag=firstBlockLabel]
+kill @e[tag=firstObbyLabel]
+kill @e[tag=npLabel]
+kill @e[tag=netherLabel]
+
+kill @e[tag=nPBsLabel]
+kill @e[tag=vineBreakPB]
+kill @e[tag=floorVinePB]
+kill @e[tag=firstBlockPB]
+kill @e[tag=firstObbyPB]
+kill @e[tag=npPB]
+kill @e[tag=netherPB]
+
+kill @e[tag=nBPsLabel]
+kill @e[tag=vineBreakBP]
+kill @e[tag=floorVineBP]
+kill @e[tag=firstBlockBP]
+kill @e[tag=firstObbyBP]
+kill @e[tag=npBP]
+kill @e[tag=netherBP]
+
+kill @e[tag=nSOBLabel]
+kill @e[tag=vineBreakSOB]
+kill @e[tag=floorVineSOB]
+kill @e[tag=firstBlockSOB]
+kill @e[tag=firstObbySOB]
+kill @e[tag=npSOB]
+kill @e[tag=netherSOB]

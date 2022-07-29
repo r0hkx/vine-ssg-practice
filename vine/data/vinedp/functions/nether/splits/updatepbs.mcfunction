@@ -121,13 +121,13 @@ execute if score pb timerDecimal matches 100.. run data merge block 2002 118 -2 
 execute if score pb timerDecimal matches 50 run data merge block 2002 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#00ff1f"},{"text":".","color":"#00ff1f"},{"text":"050","color":"#00ff1f"}]'}
 execute if score pb timerDecimal matches 0 run data merge block 2002 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#00ff1f"},{"text":".","color":"#00ff1f"},{"text":"000","color":"#00ff1f"}]'}
 
-scoreboard players operation pb timerInteger = @p firstBlockSOB
+scoreboard players operation pb timerInteger = @p bridge_npPB
 scoreboard players operation pb timerInteger /= @p ONE_THOUSAND
-scoreboard players operation pb timerDecimal = @p firstBlockSOB
+scoreboard players operation pb timerDecimal = @p bridge_npPB
 scoreboard players operation pb timerDecimal %= @p ONE_THOUSAND
-execute if score pb timerDecimal matches 100.. run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#00ff1f"},{"text":".","color":"#00ff1f"},{"score":{"name":"pb","objective":"timerDecimal"},"color":"#00ff1f"}]'}
-execute if score pb timerDecimal matches 50 run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#00ff1f"},{"text":".","color":"#00ff1f"},{"text":"050","color":"#00ff1f"}]'}
-execute if score pb timerDecimal matches 0 run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"#00ff1f"},{"text":".","color":"#00ff1f"},{"text":"000","color":"#00ff1f"}]'}
+execute if score pb timerDecimal matches 100.. run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"dark_green"},{"text":".","color":"dark_green"},{"score":{"name":"pb","objective":"timerDecimal"},"color":"dark_green"}]'}
+execute if score pb timerDecimal matches 50 run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"dark_green"},{"text":".","color":"dark_green"},{"text":"050","color":"dark_green"}]'}
+execute if score pb timerDecimal matches 0 run data merge block 2001 118 -2 {Text2:'[{"text":"","color":"gray"},{"score":{"name":"pb","objective":"timerInteger"},"color":"dark_green"},{"text":".","color":"dark_green"},{"text":"000","color":"dark_green"}]'}
 
 scoreboard players operation pb timerInteger = @p firstObbySOB
 scoreboard players operation pb timerInteger /= @p ONE_THOUSAND

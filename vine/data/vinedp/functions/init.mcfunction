@@ -143,6 +143,9 @@ scoreboard objectives add firstObbyPB dummy
 scoreboard objectives add npPB dummy
 scoreboard objectives add netherPB dummy
 
+scoreboard objectives add bridge_npPB dummy
+scoreboard objectives add tmp_bridge_np dummy
+
 scoreboard objectives add vineBreakBP dummy
 scoreboard objectives add floorVineBP dummy
 scoreboard objectives add firstBlockBP dummy

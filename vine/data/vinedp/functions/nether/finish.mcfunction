@@ -4,6 +4,10 @@ execute if score @s savePBs matches 1 if score @p npPB matches 0 run scoreboard 
 # compare to best pace
 execute if score @s savePBs matches 1 if score ms timer < @p npBP run scoreboard players operation @p npBP = ms timer
 execute if score @s savePBs matches 1 if score @p npBP matches 0 run scoreboard players operation @p npBP = ms timer
+# compare to best bridge + portal
+scoreboard players operation @p tmp_bridge_np += @p currentSplit
+execute if score @s savePBs matches 1 if score @p tmp_bridge_np < @p bridge_npPB run scoreboard players operation @p bridge_npPB = @p tmp_bridge_np
+execute if score @s savePBs matches 1 if score @p bridge_npPB matches 0 run scoreboard players operation @p bridge_npPB = @p tmp_bridge_np 
 
 # compare nether time to pb
 execute if score @s savePBs matches 1 if score ms timer < @p netherPB run scoreboard players operation @p netherPB = ms timer
