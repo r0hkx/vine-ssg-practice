@@ -105,6 +105,8 @@ scoreboard players set @p ONE_THOUSAND 1000
 scoreboard players set @p FOUR_THOUSAND 4000
 
 # add personal best splits, best paces, and sum of best
+#   overworld + overworld portal:
+
 scoreboard objectives add firstBedPB dummy
 scoreboard objectives add bsChestPB dummy
 scoreboard objectives add secondBedPB dummy
@@ -131,6 +133,29 @@ scoreboard objectives add fourthBedSOB dummy
 scoreboard objectives add flintChestSOB dummy
 scoreboard objectives add owpSOB dummy
 scoreboard objectives add owSOB dummy
+
+#   nether + nether portal:
+
+scoreboard objectives add vineBreakPB dummy
+scoreboard objectives add floorVinePB dummy
+scoreboard objectives add firstBlockPB dummy
+scoreboard objectives add firstObbyPB dummy
+scoreboard objectives add npPB dummy
+scoreboard objectives add netherPB dummy
+
+scoreboard objectives add vineBreakBP dummy
+scoreboard objectives add floorVineBP dummy
+scoreboard objectives add firstBlockBP dummy
+scoreboard objectives add firstObbyBP dummy
+scoreboard objectives add npBP dummy
+scoreboard objectives add netherBP dummy
+
+scoreboard objectives add vineBreakSOB dummy
+scoreboard objectives add floorVineSOB dummy
+scoreboard objectives add firstBlockSOB dummy
+scoreboard objectives add firstObbySOB dummy
+scoreboard objectives add npSOB dummy
+scoreboard objectives add netherSOB dummy
 
 # add editing flags for splits
 
