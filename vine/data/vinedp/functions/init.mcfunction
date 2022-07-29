@@ -37,6 +37,8 @@ scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 scoreboard objectives add breakBed minecraft.mined:minecraft.magenta_bed
 scoreboard objectives add breakLBlueBed minecraft.mined:minecraft.light_blue_bed
 scoreboard objectives add breakCobblestone minecraft.mined:minecraft.cobblestone
+scoreboard objectives add breakVine minecraft.mined:minecraft.twisting_vines
+scoreboard objectives add breakVinePlant minecraft.mined:minecraft.twisting_vines_plant
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
 scoreboard objectives add droppedLily minecraft.dropped:minecraft.lily_pad
@@ -45,6 +47,7 @@ scoreboard objectives add droppedCompass minecraft.dropped:minecraft.compass
 
 scoreboard objectives add bedCount dummy
 scoreboard objectives add chestCount dummy
+scoreboard objectives add vineCount dummy
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy
@@ -78,6 +81,7 @@ scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
 scoreboard objectives add firstBlock dummy
 scoreboard objectives add firstObsidian dummy
+scoreboard objectives add floorVine dummy
 scoreboard objectives add atNPBSpawn dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby

@@ -63,11 +63,14 @@ execute as @a[scores={breakCobblestone=1..}] run function vinedp:testfor/cobbles
 execute as @a[scores={usedFNS=1..}] run function vinedp:testfor/fns
 execute as @a[scores={openChest=1..}] run function vinedp:testfor/chest
 execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
+execute as @a[scores={breakVine=1..}] run function vinedp:testfor/vine
+execute as @a[scores={breakVinePlant=1..}] run function vinedp:testfor/vine
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
 execute as @a unless block 1900 55 75 air as @a[scores={firstBlock=0}] run function vinedp:nether/splits/firstblock
 execute as @a if block 1900 55 81 obsidian as @a[scores={firstObsidian=0}] run function vinedp:nether/splits/firstobsidian
+execute at @a if entity @p[y=59,distance=..1] as @a[scores={floorVine=0}] run function vinedp:nether/splits/floorvine
 
 # set spawn point
 spawnpoint @a 0 100 0
