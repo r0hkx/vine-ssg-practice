@@ -37,6 +37,8 @@ scoreboard objectives add brokenGrass minecraft.mined:minecraft.grass
 scoreboard objectives add breakBed minecraft.mined:minecraft.magenta_bed
 scoreboard objectives add breakLBlueBed minecraft.mined:minecraft.light_blue_bed
 scoreboard objectives add breakCobblestone minecraft.mined:minecraft.cobblestone
+scoreboard objectives add breakVine minecraft.mined:minecraft.twisting_vines
+scoreboard objectives add breakVinePlant minecraft.mined:minecraft.twisting_vines_plant
 scoreboard objectives add openChest minecraft.custom:minecraft.open_chest
 scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
 scoreboard objectives add droppedLily minecraft.dropped:minecraft.lily_pad
@@ -45,6 +47,7 @@ scoreboard objectives add droppedCompass minecraft.dropped:minecraft.compass
 
 scoreboard objectives add bedCount dummy
 scoreboard objectives add chestCount dummy
+scoreboard objectives add vineCount dummy
 
 scoreboard objectives add resetWithDiamond dummy
 scoreboard objectives add resetWithNetheri dummy
@@ -78,6 +81,7 @@ scoreboard objectives add atNPSpawn dummy
 scoreboard objectives add runningNP dummy
 scoreboard objectives add firstBlock dummy
 scoreboard objectives add firstObsidian dummy
+scoreboard objectives add floorVine dummy
 scoreboard objectives add atNPBSpawn dummy
 scoreboard objectives add state dummy
 # state 0 = main lobby
@@ -101,6 +105,8 @@ scoreboard players set @p ONE_THOUSAND 1000
 scoreboard players set @p FOUR_THOUSAND 4000
 
 # add personal best splits, best paces, and sum of best
+#   overworld + overworld portal:
+
 scoreboard objectives add firstBedPB dummy
 scoreboard objectives add bsChestPB dummy
 scoreboard objectives add secondBedPB dummy
@@ -127,6 +133,32 @@ scoreboard objectives add fourthBedSOB dummy
 scoreboard objectives add flintChestSOB dummy
 scoreboard objectives add owpSOB dummy
 scoreboard objectives add owSOB dummy
+
+#   nether + nether portal:
+
+scoreboard objectives add vineBreakPB dummy
+scoreboard objectives add floorVinePB dummy
+scoreboard objectives add firstBlockPB dummy
+scoreboard objectives add firstObbyPB dummy
+scoreboard objectives add npPB dummy
+scoreboard objectives add netherPB dummy
+
+scoreboard objectives add bridge_npPB dummy
+scoreboard objectives add tmp_bridge_np dummy
+
+scoreboard objectives add vineBreakBP dummy
+scoreboard objectives add floorVineBP dummy
+scoreboard objectives add firstBlockBP dummy
+scoreboard objectives add firstObbyBP dummy
+scoreboard objectives add npBP dummy
+scoreboard objectives add netherBP dummy
+
+scoreboard objectives add vineBreakSOB dummy
+scoreboard objectives add floorVineSOB dummy
+scoreboard objectives add firstBlockSOB dummy
+scoreboard objectives add firstObbySOB dummy
+scoreboard objectives add npSOB dummy
+scoreboard objectives add netherSOB dummy
 
 # add editing flags for splits
 

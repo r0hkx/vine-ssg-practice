@@ -7,5 +7,5 @@ execute if score ms timerDecimal matches 0 run tellraw @a ["",{"text":"You compl
 
 # title
 execute if score ms timerDecimal matches 100.. run title @a title [{"score":{"name":"ms","objective":"timerInteger"},"color":"green"},{"text":".","color":"green"},{"score":{"name":"ms","objective":"timerDecimal"},"color":"green"}," Overworld Portal"]
-execute if score ms timerDecimal matches 50 run title @a title [{"score":{"name":"ms","objective":"timerInteger"},"color":"green"},{"text":".","color":"green"},{"text":"050 Overworld","color":"green"}]
-execute if score ms timerDecimal matches 0 run title @a title [{"score":{"name":"ms","objective":"timerInteger"},"color":"green"},{"text":".","color":"green"},{"text":"000 Overworld","color":"green"}]
+execute if score ms timerDecimal matches 50 run title @a title [{"score":{"name":"ms","objective":"timerInteger"},"color":"green"},{"text":".","color":"green"},{"text":"050 Overworld Portal","color":"green"}]
+execute if score ms timerDecimal matches 0 run title @a title [{"score":{"name":"ms","objective":"timerInteger"},"color":"green"},{"text":".","color":"green"},{"text":"000 Overworld Portal","color":"green"}]
