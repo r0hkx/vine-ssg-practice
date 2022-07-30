@@ -79,6 +79,11 @@ scoreboard objectives add runningNP dummy
 scoreboard objectives add firstBlock dummy
 scoreboard objectives add firstObsidian dummy
 scoreboard objectives add atNPBSpawn dummy
+scoreboard objectives add motion1 dummy
+scoreboard objectives add motion2 dummy
+scoreboard objectives add velocity dummy
+scoreboard objectives add isMoving dummy
+
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby
@@ -89,6 +94,7 @@ scoreboard objectives add state dummy
 # state 6 = overworld portal practice
 # state 7 = nether portal lobby
 # state 8 = nether portal practice
+# state 9 = gui practice
 
 execute as @a unless score @s hasSettings matches 0.. run function vinedp:settings/defaults
 

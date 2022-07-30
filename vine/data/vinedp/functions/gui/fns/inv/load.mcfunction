@@ -1,8 +1,8 @@
 # get items from main shulker box
-loot replace entity @s container.0 mine -1003 100 -991 air{drop_contents:1b}
+loot replace entity @s container.0 mine -1007 100 -991 air{drop_contents:1b}
 
 # get item from offhand box
-loot replace entity @s weapon.offhand mine -1005 101 -993 air{drop_contents:1b}
+loot replace entity @s weapon.offhand mine -1009 101 -993 air{drop_contents:1b}
 
 # show forbidden slots 
 replaceitem entity @a container.27 gray_stained_glass_pane{display:{Name:'{"text":"Forbidden slot","italic":false}'}}
