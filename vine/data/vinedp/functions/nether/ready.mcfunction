@@ -37,3 +37,6 @@ function vinedp:nether/inv/load
 
 # clear filler items
 schedule function vinedp:util/clearglass 1t
+
+# summon enderman if setting is on
+execute if score @s enderman matches 1 run function vinedp:nether/summon_enderman

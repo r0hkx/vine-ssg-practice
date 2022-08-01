@@ -65,6 +65,7 @@ execute as @a[scores={openChest=1..}] run function vinedp:testfor/chest
 execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
 execute as @a[scores={breakVine=1..}] run function vinedp:testfor/vine
 execute as @a[scores={breakVinePlant=1..}] run function vinedp:testfor/vine
+execute as @a[scores={usedSword=1..}] run function vinedp:testfor/ironsword
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
@@ -81,3 +82,6 @@ execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 # constantly update the pbs while this is true
 execute at @a[scores={updatePBs=1}] run function vinedp:overworld/splits/updatepbs
 execute at @a[scores={updatePBs=1}] run function vinedp:nether/splits/updatepbs
+
+# since it's so annoying
+stopsound @a * minecraft:entity.enderman.stare

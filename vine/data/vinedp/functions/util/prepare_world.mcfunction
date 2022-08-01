@@ -13,5 +13,6 @@ function vinedp:util/enablefeedback
 
 scoreboard players reset @s
 function vinedp:overworld/splits/updatepbs
+function vinedp:nether/splits/updatepbs
 
 tp @s 0.5 95.0 0.3 0 5
