@@ -29,6 +29,9 @@ execute if score @s resetWithNetheri matches 1 run schedule function vinedp:util
 function vinedp:timer1t/reset
 function vinedp:timer1tb/reset
 
+#potential warning
+execute if score @s suppressWarnings matches 0 if score @s splits matches 1 if score @s savePBs matches 0 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is disabled.","color":"red"}]
+
 #hide pb indicators
 function vinedp:nether/splits/hide_pb_indicators
 

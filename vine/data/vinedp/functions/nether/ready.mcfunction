@@ -11,6 +11,7 @@ function vinedp:util/resetplayer
 
 # tp player to nether practice spawn
 execute as @e[nbt={Tags:["NetherSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s NCustomSpawn matches 1 as @e[nbt={Tags:["NCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
 
 # generate map
 function vinedp:nether/loadmap
@@ -24,6 +25,11 @@ execute if score @s resetWithNetheri matches 1 run schedule function vinedp:util
 #reset timer
 function vinedp:timer1t/reset
 
+#potential warnings
+execute if score @s suppressWarnings matches 0 if score @s splits matches 1 if score @s savePBs matches 0 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is disabled.","color":"red"}]
+#execute if score @s suppressWarnings matches 0 if score @s splits matches 1 if score @s savePBs matches 0 if score @s NetherCustomSpawn matches 0 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is disabled.","color":"red"}]
+#execute if score @s suppressWarnings matches 0 if score @s splits matches 1 if score @s savePBs matches 1 if score @s NetherCustomSpawn matches 1 run tellraw @a [{"text":"Warning: The \"Save PBs\" setting is enabled, even though you are using a custom spawn.","color":"red"}]
+
 #hide pb indicators
 function vinedp:nether/splits/hide_pb_indicators
 
@@ -32,3 +38,6 @@ function vinedp:nether/inv/load
 
 # clear filler items
 schedule function vinedp:util/clearglass 1t
+
+# summon enderman if setting is on
+execute if score @s enderman matches 1 run function vinedp:nether/summon_enderman

@@ -1,0 +1,1 @@
+execute as @a run data merge entity @e[type=minecraft:enderman,limit=1,sort=nearest] {NoAI:0b}

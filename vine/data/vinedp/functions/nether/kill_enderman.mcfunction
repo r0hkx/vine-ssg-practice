@@ -1,0 +1,1 @@
+execute as @e[type=enderman] run tp @s ~ 0 ~
