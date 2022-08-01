@@ -11,6 +11,7 @@ function vinedp:util/resetplayer
 
 # tp player to nether practice spawn
 execute as @e[nbt={Tags:["NetherSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
+execute if score @s NCustomSpawn matches 1 as @e[nbt={Tags:["NCustomSpawn"]}] at @s run teleport @p ~ ~ ~ ~ ~
 
 # generate map
 function vinedp:nether/loadmap

@@ -16,16 +16,20 @@ execute as @a[scores={OWCustomSpawn=1, state=2}] at @e[tag=OWCustomSpawn] at @s 
 execute as @a[scores={state=2, atOWSpawn=0, runningOW=0}] run function vinedp:overworld/start
 
 # full nether
-#   check if player is at spawn
-execute as @p[scores={state=4}] at @e[tag=NetherSpawn] if entity @s[distance=0] run scoreboard players set @s atNetherSpawn 1
-execute as @p[scores={state=4}] at @e[tag=NetherSpawn] unless entity @s[distance=0] run scoreboard players set @s atNetherSpawn 0
-execute as @p[scores={state=4}] at @e[tag=NetherSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNetherSpawn 0
+#   check if player is their nether spawn
+#       default spawn
+execute as @p[scores={NCustomSpawn=0, state=4}] at @e[tag=NetherSpawn] if entity @s[distance=0] run scoreboard players set @s atNetherSpawn 1
+execute as @p[scores={NCustomSpawn=0, state=4}] at @e[tag=NetherSpawn] unless entity @s[distance=0] run scoreboard players set @s atNetherSpawn 0
+execute as @p[scores={NCustomSpawn=0, state=4}] at @e[tag=NetherSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NetherSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNetherSpawn 0
+#       custom spawn
+execute as @p[scores={NCustomSpawn=1, state=4}] at @e[tag=NCustomSpawn] if entity @s[distance=0] run scoreboard players set @s atNetherSpawn 1
+execute as @p[scores={NCustomSpawn=1, state=4}] at @e[tag=NCustomSpawn] unless entity @s[distance=0] run scoreboard players set @s atNetherSpawn 0
+execute as @p[scores={NCustomSpawn=1, state=4}] at @e[tag=NCustomSpawn] at @s positioned ^ ^ ^1 rotated as @e[tag=NCustomSpawn, limit=1] positioned ^ ^ ^-1 unless entity @s[distance=..0.01] run scoreboard players set @s atNetherSpawn 0
 #   if player is in nether practice, and not at spawn, and not currently running, start timer
 execute as @a[scores={state=4, atNetherSpawn=0, runningNether=0}] run function vinedp:nether/start
 #   if the player is in the nether exit portal reset
 #   since the exit portal can only be in one spot we just check that one spot
 execute as @a[scores={state=4, atNetherSpawn=0, runningNether=1}] if block 1900 56 82 nether_portal run function vinedp:nether/finish
-# check if player is at nether portal practice spawn
 
 # nether portal
 #   check if player is at their nether portal spawn
