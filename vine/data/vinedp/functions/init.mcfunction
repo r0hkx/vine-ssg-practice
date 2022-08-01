@@ -44,6 +44,7 @@ scoreboard objectives add placedObsidian minecraft.used:minecraft.obsidian
 scoreboard objectives add droppedLily minecraft.dropped:minecraft.lily_pad
 scoreboard objectives add droppedBarrier minecraft.dropped:minecraft.barrier
 scoreboard objectives add droppedCompass minecraft.dropped:minecraft.compass
+scoreboard objectives add usedSword minecraft.used:minecraft.iron_sword
 
 scoreboard objectives add bedCount dummy
 scoreboard objectives add chestCount dummy
@@ -68,6 +69,7 @@ scoreboard objectives add NPCustomSpawn dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
 scoreboard objectives add optmalItemMotion dummy
+scoreboard objectives add enderman dummy
 
 scoreboard objectives add hasSettings dummy
 
