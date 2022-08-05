@@ -169,4 +169,13 @@ scoreboard objectives add netherSOB dummy
 scoreboard objectives add pbType dummy
 scoreboard objectives add updatePBs dummy
 
+# ghost runner
+scoreboard objectives add raceow_lastrun dummy
+scoreboard objectives add raceow_pb dummy
+scoreboard objectives add raceow_imp1 dummy
+scoreboard objectives add raceow_imp2 dummy
+scoreboard objectives add raceow_imp3 dummy
+scoreboard objectives add raceow_imp4 dummy
+scoreboard objectives add raceow_imp5 dummy
+
 function vinedp:forceload

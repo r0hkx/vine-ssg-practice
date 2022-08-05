@@ -11,6 +11,13 @@ execute if score @s savePBs matches 1 if score @p owPB matches 0 run scoreboard 
 # best pace is always the same
 execute if score @s savePBs matches 1 run scoreboard players operation @p owBP = @p owPB
 
+# ghostrunner 
+#   0.06 is last run 
+#   0.07 is pb
+playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.06
+execute if score @s savePBs matches 1 if score ms timer < @p owPB run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
+execute if score @s savePBs matches 1 if score @p owPB matches 0 run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
+
 function vinedp:timer1t/stop
 function vinedp:timer1t/titleoverworld
 

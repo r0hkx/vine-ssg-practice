@@ -10,3 +10,7 @@ function vinedp:overworld/splits/updatepbs
 function vinedp:overworld/splits/show_pb_indicators
 clear @s
 gamemode survival @s
+gamerule sendCommandFeedback true
+playsound ghostrunner:stop_playback ambient @a
+playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0
+# save to pitch 0 to stop recording

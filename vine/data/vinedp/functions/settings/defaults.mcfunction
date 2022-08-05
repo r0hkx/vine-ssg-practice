@@ -24,6 +24,15 @@ execute unless score @s optmalItemMotion matches 0.. run scoreboard players set 
 execute unless score @s enderman matches 0.. run scoreboard players set @a enderman 0
 execute unless score @s enderman_random matches 0.. run scoreboard players set @a enderman_random 0
 
+# ghostrunner
+execute unless score @s raceow_lastrun matches 0.. run scoreboard players set @a raceow_lastrun 0
+execute unless score @s raceow_pb matches 0.. run scoreboard players set @a raceow_pb 0
+execute unless score @s raceow_imp1 matches 0.. run scoreboard players set @a raceow_imp1 0
+execute unless score @s raceow_imp2 matches 0.. run scoreboard players set @a raceow_imp2 0
+execute unless score @s raceow_imp3 matches 0.. run scoreboard players set @a raceow_imp3 0
+execute unless score @s raceow_imp4 matches 0.. run scoreboard players set @a raceow_imp4 0
+execute unless score @s raceow_imp5 matches 0.. run scoreboard players set @a raceow_imp5 0
+
 scoreboard players set @a hasSettings 1
 
 scoreboard players set @a ONE_THOUSAND 1000
