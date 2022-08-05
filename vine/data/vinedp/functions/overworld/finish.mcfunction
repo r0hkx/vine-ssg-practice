@@ -14,9 +14,9 @@ execute if score @s savePBs matches 1 run scoreboard players operation @p owBP =
 # ghostrunner 
 #   0.06 is last run 
 #   0.07 is pb
-playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.06
-execute if score @s savePBs matches 1 if score ms timer < @p owPB run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
-execute if score @s savePBs matches 1 if score @p owPB matches 0 run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
+execute as @a at @s run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.06
+execute as @a at @s if score @s savePBs matches 1 if score ms timer < @p owPB run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
+execute as @a at @s if score @s savePBs matches 1 if score @p owPB matches 0 run playsound ghostrunner:save_recording ambient @a ~ ~ ~ 0 0.07
 
 function vinedp:timer1t/stop
 function vinedp:timer1t/titleoverworld
