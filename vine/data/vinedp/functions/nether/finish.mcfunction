@@ -1,3 +1,6 @@
+
+function vinedp:ghostrunner/savenether
+
 # compare nether portal split to best split
 execute if score @s savePBs matches 1 if score @p currentSplit < @p npPB run scoreboard players operation @p npPB = @p currentSplit
 execute if score @s savePBs matches 1 if score @p npPB matches 0 run scoreboard players operation @p npPB = @p currentSplit 

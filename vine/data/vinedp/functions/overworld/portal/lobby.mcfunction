@@ -9,3 +9,5 @@ scoreboard players set @s runningOWP 0
 function vinedp:overworld/splits/updatepbs
 clear @s
 gamemode survival @s
+
+function vinedp:ghostrunner/stop

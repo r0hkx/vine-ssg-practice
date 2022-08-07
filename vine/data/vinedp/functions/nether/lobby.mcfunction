@@ -14,3 +14,4 @@ kill @e[type=experience_orb]
 clear @s
 gamemode survival @s
 
+function vinedp:ghostrunner/stop
