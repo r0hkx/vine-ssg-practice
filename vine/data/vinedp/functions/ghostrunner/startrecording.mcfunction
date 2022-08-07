@@ -1,0 +1,1 @@
+execute as @a at @s run playsound ghostrunner:start_recording ambient @a
