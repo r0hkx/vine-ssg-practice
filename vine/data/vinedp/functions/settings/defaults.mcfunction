@@ -33,6 +33,22 @@ execute unless score @s raceow_imp3 matches 0.. run scoreboard players set @a ra
 execute unless score @s raceow_imp4 matches 0.. run scoreboard players set @a raceow_imp4 0
 execute unless score @s raceow_imp5 matches 0.. run scoreboard players set @a raceow_imp5 0
 
+execute unless score @s raceowp_lastrun matches 0.. run scoreboard players set @a raceowp_lastrun 0
+execute unless score @s raceowp_pb matches 0.. run scoreboard players set @a raceowp_pb 0
+execute unless score @s raceowp_imp1 matches 0.. run scoreboard players set @a raceowp_imp1 0
+execute unless score @s raceowp_imp2 matches 0.. run scoreboard players set @a raceowp_imp2 0
+execute unless score @s raceowp_imp3 matches 0.. run scoreboard players set @a raceowp_imp3 0
+execute unless score @s raceowp_imp4 matches 0.. run scoreboard players set @a raceowp_imp4 0
+execute unless score @s raceowp_imp5 matches 0.. run scoreboard players set @a raceowp_imp5 0
+
+execute unless score @s racen_lastrun matches 0.. run scoreboard players set @a racen_lastrun 0
+execute unless score @s racen_pb matches 0.. run scoreboard players set @a racen_pb 0
+execute unless score @s racen_imp1 matches 0.. run scoreboard players set @a racen_imp1 0
+execute unless score @s racen_imp2 matches 0.. run scoreboard players set @a racen_imp2 0
+execute unless score @s racen_imp3 matches 0.. run scoreboard players set @a racen_imp3 0
+execute unless score @s racen_imp4 matches 0.. run scoreboard players set @a racen_imp4 0
+execute unless score @s racen_imp5 matches 0.. run scoreboard players set @a racen_imp5 0
+
 scoreboard players set @a hasSettings 1
 
 scoreboard players set @a ONE_THOUSAND 1000

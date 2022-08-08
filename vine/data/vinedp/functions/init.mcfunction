@@ -26,6 +26,7 @@ scoreboard objectives add timerInteger dummy
 scoreboard objectives add ONE_THOUSAND dummy
 scoreboard objectives add FOUR dummy
 scoreboard objectives add FOUR_THOUSAND dummy
+scoreboard objectives add nums dummy
 scoreboard objectives add timerWithAnim dummy
 scoreboard objectives add currentSplit dummy
 scoreboard objectives add deaths deathCount
@@ -107,6 +108,7 @@ scoreboard players set msB ONE_THOUSAND 1000
 scoreboard players set msB FOUR 4
 scoreboard players set @p ONE_THOUSAND 1000
 scoreboard players set @p FOUR_THOUSAND 4000
+scoreboard players set 2 nums 2
 
 # add personal best splits, best paces, and sum of best
 #   overworld + overworld portal:
@@ -177,5 +179,21 @@ scoreboard objectives add raceow_imp2 dummy
 scoreboard objectives add raceow_imp3 dummy
 scoreboard objectives add raceow_imp4 dummy
 scoreboard objectives add raceow_imp5 dummy
+
+scoreboard objectives add raceowp_lastrun dummy
+scoreboard objectives add raceowp_pb dummy
+scoreboard objectives add raceowp_imp1 dummy
+scoreboard objectives add raceowp_imp2 dummy
+scoreboard objectives add raceowp_imp3 dummy
+scoreboard objectives add raceowp_imp4 dummy
+scoreboard objectives add raceowp_imp5 dummy
+
+scoreboard objectives add racen_lastrun dummy
+scoreboard objectives add racen_pb dummy
+scoreboard objectives add racen_imp1 dummy
+scoreboard objectives add racen_imp2 dummy
+scoreboard objectives add racen_imp3 dummy
+scoreboard objectives add racen_imp4 dummy
+scoreboard objectives add racen_imp5 dummy
 
 function vinedp:forceload

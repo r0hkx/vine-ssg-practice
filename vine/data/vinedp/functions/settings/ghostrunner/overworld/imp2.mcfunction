@@ -1,3 +1,3 @@
-execute as @a[scores={raceow_imp2=0}] run schedule function vinedp:settings/ghostrunner/overworld/imp2/on 1t
-execute as @a[scores={raceow_imp2=1}] run schedule function vinedp:settings/ghostrunner/overworld/imp2/off 1t
-schedule function vinedp:settings/ghostrunner/overworld/prompt 1t
+scoreboard players add @a raceow_imp2 1
+scoreboard players operation @a raceow_imp2 %= 2 nums
+function vinedp:settings/ghostrunner/overworld/prompt
