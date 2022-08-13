@@ -68,6 +68,7 @@ scoreboard objectives add OWCustomSpawn dummy
 scoreboard objectives add OWPCustomSpawn dummy
 scoreboard objectives add NCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
+scoreboard objectives add BS1CustomSpawn dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
 scoreboard objectives add optmalItemMotion dummy
@@ -76,18 +77,27 @@ scoreboard objectives add enderman_random dummy
 
 scoreboard objectives add hasSettings dummy
 
+
 scoreboard objectives add atOWSpawn dummy
 scoreboard objectives add runningOW dummy
+
 scoreboard objectives add atNetherSpawn dummy
 scoreboard objectives add runningNether dummy
+
 scoreboard objectives add atOWPSpawn dummy
 scoreboard objectives add runningOWP dummy
+
 scoreboard objectives add atNPSpawn dummy
+scoreboard objectives add atNPBSpawn dummy
 scoreboard objectives add runningNP dummy
+
 scoreboard objectives add firstBlock dummy
 scoreboard objectives add firstObsidian dummy
 scoreboard objectives add floorVine dummy
-scoreboard objectives add atNPBSpawn dummy
+
+scoreboard objectives add atBS1Spawn dummy
+scoreboard objectives add runningBS1 dummy
+
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby
@@ -98,6 +108,15 @@ scoreboard objectives add state dummy
 # state 6 = overworld portal practice
 # state 7 = nether portal lobby
 # state 8 = nether portal practice
+# state 9 looting lobby
+# state 10 = 1st bs looting "lobby"
+# state 11 = 1st bs looting prac
+# state 12 = flint chest looting "lobby"
+# state 13 = flint chest looting prac
+# state 14 = 2nd bs looting "lobby"
+# state 15 = 2nd bs looting prac
+# state 16 = flint crafting "lobby"
+# state 16 = flint crafting prac
 
 execute as @a unless score @s hasSettings matches 0.. run function vinedp:settings/defaults
 
