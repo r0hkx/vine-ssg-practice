@@ -113,6 +113,10 @@ scoreboard objectives add atBS2Spawn dummy
 scoreboard objectives add runningBS2 dummy
 scoreboard objectives add bs2looted dummy
 
+scoreboard objectives add atFNSSpawn dummy
+scoreboard objectives add runningFNS dummy
+scoreboard objectives add fnscrafted dummy
+
 scoreboard objectives add state dummy
 # state 0 = main lobby
 # state 1 = overworld lobby

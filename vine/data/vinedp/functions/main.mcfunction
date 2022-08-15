@@ -73,6 +73,7 @@ execute as @a[scores={usedSword=1..}] run function vinedp:testfor/ironsword
 execute as @a[scores={runningBS1=1,bs1looted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:testfor/bs1loot
 execute as @a[scores={runningFC=1,fclooted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:10b},{id:"minecraft:flint"}]}] run function vinedp:testfor/fcloot
 execute as @a[scores={runningBS2=1,bs2looted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:19b},{id:"minecraft:iron_ingot"}]}] run function vinedp:testfor/bs2loot
+execute as @a[scores={runningFNS=1,fnscrafted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:flint_and_steel"}]}] run function vinedp:testfor/fnscraft
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity

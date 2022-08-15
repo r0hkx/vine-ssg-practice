@@ -9,6 +9,7 @@ scoreboard players set @s vineCount 0
 scoreboard players set @s fclooted 0
 scoreboard players set @s bs1looted 0
 scoreboard players set @s bs2looted 0
+scoreboard players set @s fnscrafted 0
 clear @s
 function vinedp:util/killitems
 function vinedp:util/enablefeedback
