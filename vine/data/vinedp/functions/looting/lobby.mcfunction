@@ -28,6 +28,7 @@ execute if score @s state matches 16 run tp @s 994.5 87 -4.5 0 0
 
 clear @s
 gamemode survival @s
+gamerule sendCommandFeedback true
 
 function vinedp:overworld/splits/show_pb_indicators
 

@@ -69,6 +69,7 @@ scoreboard objectives add OWPCustomSpawn dummy
 scoreboard objectives add NCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
 scoreboard objectives add BS1CustomSpawn dummy
+scoreboard objectives add BS1Standalone dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
 scoreboard objectives add optmalItemMotion dummy

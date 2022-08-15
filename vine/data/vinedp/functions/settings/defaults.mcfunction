@@ -18,6 +18,8 @@ execute unless score @s OWCustomSpawn matches 0.. run scoreboard players set @a 
 execute unless score @s OWPCustomSpawn matches 0.. run scoreboard players set @a OWPCustomSpawn 0
 execute unless score @s NCustomSpawn matches 0.. run scoreboard players set @a NCustomSpawn 0
 execute unless score @s NPCustomSpawn matches 0.. run scoreboard players set @a NPCustomSpawn 0
+execute unless score @s BS1CustomSpawn matches 0.. run scoreboard players set @a BS1CustomSpawn 0
+execute unless score @s BS1Standalone matches 0.. run scoreboard players set @a BS1Standalone 0
 execute unless score @s savePBs matches 0.. run scoreboard players set @a savePBs 1
 execute unless score @s suppressWarnings matches 0.. run scoreboard players set @a suppressWarnings 0
 execute unless score @s optmalItemMotion matches 0.. run scoreboard players set @a optmalItemMotion 0 
