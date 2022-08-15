@@ -1,0 +1,1 @@
+tellraw @a [{"text":"Saved ","color":"dark_green"},{"text":"your inventory setup.","color":"gray"}]

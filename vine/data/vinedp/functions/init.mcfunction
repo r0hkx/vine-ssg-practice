@@ -70,6 +70,8 @@ scoreboard objectives add NCustomSpawn dummy
 scoreboard objectives add NPCustomSpawn dummy
 scoreboard objectives add BS1CustomSpawn dummy
 scoreboard objectives add BS1Standalone dummy
+scoreboard objectives add FCCustomSpawn dummy
+scoreboard objectives add FCStandalone dummy
 scoreboard objectives add savePBs dummy
 scoreboard objectives add suppressWarnings dummy
 scoreboard objectives add optmalItemMotion dummy
@@ -96,9 +98,13 @@ scoreboard objectives add runningNP dummy
 scoreboard objectives add firstBlock dummy
 scoreboard objectives add firstObsidian dummy
 scoreboard objectives add floorVine dummy
+scoreboard objectives add fclooted dummy
 
 scoreboard objectives add atBS1Spawn dummy
 scoreboard objectives add runningBS1 dummy
+
+scoreboard objectives add atFCSpawn dummy
+scoreboard objectives add runningFC dummy
 
 scoreboard objectives add state dummy
 # state 0 = main lobby

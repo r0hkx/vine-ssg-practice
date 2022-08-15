@@ -1,4 +1,4 @@
-tellraw @a [{"text":"Saved","color":"dark_green"},{"text":"your inventory setup.","color":"gray"}]
+schedule function vinedp:util/savemessage 2t
 
 # put inventory in storage
 data modify storage store5 Inventory set from entity @s Inventory

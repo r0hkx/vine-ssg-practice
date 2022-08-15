@@ -71,10 +71,12 @@ execute as @a[scores={breakVine=1..}] run function vinedp:testfor/vine
 execute as @a[scores={breakVinePlant=1..}] run function vinedp:testfor/vine
 execute as @a[scores={usedSword=1..}] run function vinedp:testfor/ironsword
 execute as @a[scores={runningBS1=1..}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:testfor/bs1loot
+execute as @a[scores={runningFC=1..}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:10b},{id:"minecraft:flint"}]}] run function vinedp:testfor/fcloot
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
-execute at @e[tag=BS1Proximity] as @a if entity @s[distance=..2] run function vinedp:looting/bs1/finish
+execute at @e[tag=BS1Proximity] as @a[scores={state=10..11,BS1Standalone=0}] if entity @s[distance=..2] run function vinedp:looting/bs1/finish
+execute at @e[tag=FCProximity] as @a[scores={state=12..13,FCStandalone=0}] if entity @s[distance=..1.5] run function vinedp:looting/flintchest/finish
 execute as @a unless block 1900 55 75 air as @a[scores={firstBlock=0, splits=1}] run function vinedp:nether/splits/firstblock
 execute as @a if block 1900 55 81 obsidian as @a[scores={firstObsidian=0, splits=1}] run function vinedp:nether/splits/firstobsidian
 execute at @a if entity @p[y=59,distance=..1] as @a[scores={floorVine=0, splits=1}] run function vinedp:nether/splits/floorvine
