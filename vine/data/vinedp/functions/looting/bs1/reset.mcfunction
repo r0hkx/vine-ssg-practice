@@ -1,4 +1,4 @@
-execute if score @s runningBS1 matches 1 as @a unless entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run tellraw @a {"text":"Fail","color":"red"}
+execute if score @s runningBS1 matches 1 as @a unless entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:util/failmessage
 
 function vinedp:timer1t/stop
 

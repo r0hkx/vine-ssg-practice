@@ -1,0 +1,11 @@
+# each "store#{n}" refers to where each inventory is stored for each practice
+
+# store = nether
+# store2 = ow portal
+# store3 = nether portal
+# store4 = ow
+
+# store5 = bs1
+# store6 = flintchest
+# store7 = bs2
+# store8 = fns

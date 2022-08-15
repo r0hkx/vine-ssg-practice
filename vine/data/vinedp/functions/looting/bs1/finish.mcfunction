@@ -6,6 +6,6 @@ function vinedp:timer1t/stop
 scoreboard players set @s runningBS1 0
 
 execute as @a if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:timer1t/titlebs1
-execute as @a unless entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run tellraw @a {"text":"Fail","color":"red"}
+execute as @a unless entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:util/failmessage
 execute if score @s BS1Standalone matches 0 run function vinedp:looting/lobby
 function vinedp:util/resetplayer
