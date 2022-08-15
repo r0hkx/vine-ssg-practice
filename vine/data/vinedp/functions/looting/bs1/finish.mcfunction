@@ -1,11 +1,9 @@
-# compare 2nd bed split to pb
-# execute if score @s savePBs matches 1 if score ms timer < @p secondBedPB run scoreboard players operation @p secondBedPB = ms timer
-# execute if score @s savePBs matches 1 if score @p secondBedPB matches 0 run scoreboard players operation @p secondBedPB = ms timer
+# save pbs here
 
 function vinedp:timer1t/stop
 scoreboard players set @s runningBS1 0
 
-execute as @a if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:timer1t/titlebs1
-execute as @a unless entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:util/failmessage
+execute if score @s bs1looted matches 1 run function vinedp:timer1t/titlebs1
+execute if score @s bs1looted matches 0 run function vinedp:util/failmessage
 execute if score @s BS1Standalone matches 0 run function vinedp:looting/lobby
-function vinedp:util/resetplayer
+execute if score @s BS1Standalone matches 0 run function vinedp:util/resetplayer

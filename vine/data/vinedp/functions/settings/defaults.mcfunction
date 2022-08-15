@@ -20,6 +20,8 @@ execute unless score @s NCustomSpawn matches 0.. run scoreboard players set @a N
 execute unless score @s NPCustomSpawn matches 0.. run scoreboard players set @a NPCustomSpawn 0
 execute unless score @s BS1CustomSpawn matches 0.. run scoreboard players set @a BS1CustomSpawn 0
 execute unless score @s BS1Standalone matches 0.. run scoreboard players set @a BS1Standalone 0
+execute unless score @s BS2CustomSpawn matches 0.. run scoreboard players set @a BS2CustomSpawn 0
+execute unless score @s BS2Standalone matches 0.. run scoreboard players set @a BS2Standalone 0
 execute unless score @s FCCustomSpawn matches 0.. run scoreboard players set @a FCCustomSpawn 0
 execute unless score @s FCStandalone matches 0.. run scoreboard players set @a FCStandalone 0
 execute unless score @s savePBs matches 0.. run scoreboard players set @a savePBs 1

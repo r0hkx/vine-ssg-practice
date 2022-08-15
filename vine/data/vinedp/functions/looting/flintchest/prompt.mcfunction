@@ -3,7 +3,7 @@ execute unless score @s state matches 13 run scoreboard players set @s state 12
 
 tellraw @a [{"text":"\n\n\n\n\n\n\n\n\n"}]
 tellraw @a [{"text":"❖❖❖  ","color":"#66736a"},{"text":"Flint Chest Settings  ","color":"#bcd1c2"},{"text":"❖❖❖","color":"#66736a"}]
-tellraw @a [{"text":"---------------------------------","color":"gray"}]
+tellraw @a [{"text":"-------------------------------","color":"gray"}]
 #:=-=-=-=- »
 
 tellraw @a ["",{"text":"[ON] ","color":"green"},{"text":"[---] ","color":"dark_gray"},{"text":"»","color":"#7536FF"},{"text":" Custom Inventory    ","color":"#A988F2"},{"text":"[\u270e]","color":"#737CFF","clickEvent":{"action":"run_command","value":"/function vinedp:looting/flintchest/inv/set"},"hoverEvent":{"action":"show_text","contents":["Click to Edit"]}}]
