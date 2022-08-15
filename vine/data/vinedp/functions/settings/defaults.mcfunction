@@ -25,6 +25,7 @@ execute unless score @s suppressWarnings matches 0.. run scoreboard players set 
 execute unless score @s optmalItemMotion matches 0.. run scoreboard players set @a optmalItemMotion 0 
 execute unless score @s enderman matches 0.. run scoreboard players set @a enderman 0
 execute unless score @s enderman_random matches 0.. run scoreboard players set @a enderman_random 0
+execute unless score @s sendFails matches 0.. run scoreboard players set @a sendFails 1
 
 # ghostrunner
 execute unless score @s raceow_lastrun matches 0.. run scoreboard players set @a raceow_lastrun 0

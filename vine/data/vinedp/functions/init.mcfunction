@@ -75,6 +75,7 @@ scoreboard objectives add suppressWarnings dummy
 scoreboard objectives add optmalItemMotion dummy
 scoreboard objectives add enderman dummy
 scoreboard objectives add enderman_random dummy
+scoreboard objectives add sendFails dummy
 
 scoreboard objectives add hasSettings dummy
 

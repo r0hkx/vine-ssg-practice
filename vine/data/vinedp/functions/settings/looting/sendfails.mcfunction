@@ -1,5 +1,5 @@
-scoreboard players add @a savePBs 1
-scoreboard players operation @a savePBs %= 2 nums
+scoreboard players add @a sendFails 1
+scoreboard players operation @a sendFails %= 2 nums
 
 execute if score @s state matches 10 run function vinedp:looting/bs1/prompt
 execute if score @s state matches 12 run function vinedp:looting/flintchest/prompt
