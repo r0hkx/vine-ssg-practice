@@ -32,6 +32,7 @@ execute if score @s suppressWarnings matches 0 if score @s splits matches 1 if s
 
 #hide pb indicators
 function vinedp:overworld/splits/hide_pb_indicators
+function vinedp:looting/splits/hide_pb_indicators
 
 # give items
 function vinedp:overworld/inv/load

@@ -26,10 +26,16 @@ execute if score @s state matches 12 run tp @s 998.5 87 -4.5 0 0
 execute if score @s state matches 14 run tp @s 996.5 87 -4.5 0 0
 execute if score @s state matches 16 run tp @s 994.5 87 -4.5 0 0
 
+scoreboard players set @s runningBS1 0
+scoreboard players set @s runningFC 0
+scoreboard players set @s runningBS2 0
+scoreboard players set @s runningFNS 0
+
 clear @s
 gamemode survival @s
 gamerule sendCommandFeedback true
 
 function vinedp:overworld/splits/show_pb_indicators
+function vinedp:looting/splits/show_pb_indicators
 
 function vinedp:ghostrunner/stop
