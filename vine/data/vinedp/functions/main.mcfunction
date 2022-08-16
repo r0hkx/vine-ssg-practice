@@ -96,3 +96,5 @@ execute at @a[scores={updatePBs=1}] run function vinedp:nether/splits/updatepbs
 
 # since it's so annoying
 stopsound @a * minecraft:entity.enderman.stare
+stopsound @a * minecraft:block.campfire.crackle
+stopsound @a * minecraft:block.fire.ambient

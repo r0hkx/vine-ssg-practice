@@ -11,8 +11,6 @@ function vinedp:looting/loadmap
 
 title @a clear
 
-execute if score @s resetWithDiamond matches 1 run schedule function vinedp:util/givediamond 1t
-
 function vinedp:timer1t/reset
 
 function vinedp:overworld/splits/hide_pb_indicators
