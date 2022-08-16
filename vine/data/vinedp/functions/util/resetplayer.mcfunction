@@ -6,6 +6,10 @@ effect give @s minecraft:fire_resistance 10 0 true
 scoreboard players set @s bedCount 0
 scoreboard players set @s chestCount 0
 scoreboard players set @s vineCount 0
+scoreboard players set @s fclooted 0
+scoreboard players set @s bs1looted 0
+scoreboard players set @s bs2looted 0
+scoreboard players set @s fnscrafted 0
 clear @s
 function vinedp:util/killitems
 function vinedp:util/enablefeedback

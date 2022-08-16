@@ -1,0 +1,1 @@
+execute if score @s sendFails matches 1 run tellraw @a {"text":"× Fail ×","color":"red"}

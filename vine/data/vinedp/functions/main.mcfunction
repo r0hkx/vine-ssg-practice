@@ -70,9 +70,16 @@ execute as @a[scores={placedObsidian=1..}] run function vinedp:testfor/obsidian
 execute as @a[scores={breakVine=1..}] run function vinedp:testfor/vine
 execute as @a[scores={breakVinePlant=1..}] run function vinedp:testfor/vine
 execute as @a[scores={usedSword=1..}] run function vinedp:testfor/ironsword
+execute as @a[scores={runningBS1=1,bs1looted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:6b},{id:"minecraft:iron_pickaxe"}]}] run function vinedp:testfor/bs1loot
+execute as @a[scores={runningFC=1,fclooted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:10b},{id:"minecraft:flint"}]}] run function vinedp:testfor/fcloot
+execute as @a[scores={runningBS2=1,bs2looted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:obsidian",Count:19b},{id:"minecraft:iron_ingot"}]}] run function vinedp:testfor/bs2loot
+execute as @a[scores={runningFNS=1,fnscrafted=0}] if entity @a[nbt={Inventory:[{id:"minecraft:flint_and_steel"}]}] run function vinedp:testfor/fnscraft
 execute at @a run execute if block ~ ~ ~ nether_portal run function vinedp:testfor/portal
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_terracotta run function vinedp:testfor/lava
 execute at @e[tag=ProximityReset] as @p if entity @s[distance=..3] run function vinedp:testfor/proximity
+execute at @e[tag=BS1Proximity] as @a[scores={state=10..11,BS1Standalone=0}] if entity @s[distance=..2] run function vinedp:looting/bs1/finish
+execute at @e[tag=FCProximity] as @a[scores={state=12..13,FCStandalone=0}] if entity @s[distance=..1.5] run function vinedp:looting/flintchest/finish
+execute at @e[tag=BS2Proximity] as @a[scores={state=14..15,BS2Standalone=0}] if entity @s[distance=..0.5] run function vinedp:looting/bs2/finish
 execute as @a unless block 1900 55 75 air as @a[scores={firstBlock=0, splits=1}] run function vinedp:nether/splits/firstblock
 execute as @a if block 1900 55 81 obsidian as @a[scores={firstObsidian=0, splits=1}] run function vinedp:nether/splits/firstobsidian
 execute at @a if entity @p[y=59,distance=..1] as @a[scores={floorVine=0, splits=1}] run function vinedp:nether/splits/floorvine
@@ -85,7 +92,10 @@ execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
 # constantly update the pbs while this is true
 execute at @a[scores={updatePBs=1}] run function vinedp:overworld/splits/updatepbs
+execute at @a[scores={updatePBs=1}] run function vinedp:looting/splits/updatepbs
 execute at @a[scores={updatePBs=1}] run function vinedp:nether/splits/updatepbs
 
 # since it's so annoying
 stopsound @a * minecraft:entity.enderman.stare
+stopsound @a * minecraft:block.campfire.crackle
+stopsound @a * minecraft:block.fire.ambient

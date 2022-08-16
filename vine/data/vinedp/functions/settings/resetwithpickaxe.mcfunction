@@ -1,2 +1,7 @@
-execute as @a[scores={resetWithPickaxe=0}] run schedule function vinedp:settings/pickaxe/on 1t
-execute as @a[scores={resetWithPickaxe=1}] run schedule function vinedp:settings/pickaxe/off 1t
+scoreboard players add @a resetWithPickaxe 1
+scoreboard players operation @a resetWithPickaxe %= 2 nums
+
+execute if score @s state matches 10..11 run function vinedp:looting/bs1/prompt
+execute if score @s state matches 12..13 run function vinedp:looting/flintchest/prompt
+execute if score @s state matches 14..15 run function vinedp:looting/bs2/prompt
+execute if score @s state matches 16..17 run function vinedp:looting/fns/prompt
