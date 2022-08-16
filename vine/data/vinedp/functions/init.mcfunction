@@ -204,6 +204,15 @@ scoreboard objectives add firstObbySOB dummy
 scoreboard objectives add npSOB dummy
 scoreboard objectives add netherSOB dummy
 
+#   looting:
+
+scoreboard objectives add bs1PB dummy
+scoreboard objectives add fcPB dummy
+scoreboard objectives add bs2PB dummy
+scoreboard objectives add fnsPB dummy
+
+scoreboard objectives add lootingSOB dummy
+
 # add editing flags for splits
 
 scoreboard objectives add pbType dummy

@@ -92,6 +92,7 @@ execute at @a[scores={state=0}] run function vinedp:timer1t/hide
 
 # constantly update the pbs while this is true
 execute at @a[scores={updatePBs=1}] run function vinedp:overworld/splits/updatepbs
+execute at @a[scores={updatePBs=1}] run function vinedp:looting/splits/updatepbs
 execute at @a[scores={updatePBs=1}] run function vinedp:nether/splits/updatepbs
 
 # since it's so annoying
