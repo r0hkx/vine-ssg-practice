@@ -35,6 +35,7 @@ clear @s
 gamemode survival @s
 gamerule sendCommandFeedback true
 
+function vinedp:looting/splits/updatepbs
 function vinedp:overworld/splits/show_pb_indicators
 function vinedp:looting/splits/show_pb_indicators
 
