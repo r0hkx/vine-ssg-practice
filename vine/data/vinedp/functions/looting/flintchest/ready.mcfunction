@@ -17,6 +17,7 @@ execute if score @s resetWithDiamond matches 1 if score @s FCStandalone matches 
 function vinedp:timer1t/reset
 
 function vinedp:overworld/splits/hide_pb_indicators
+function vinedp:looting/splits/hide_pb_indicators
 
 function vinedp:looting/flintchest/inv/load
 

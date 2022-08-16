@@ -17,6 +17,7 @@ execute if score @s resetWithDiamond matches 1 if score @s BS2Standalone matches
 function vinedp:timer1t/reset
 
 function vinedp:overworld/splits/hide_pb_indicators
+function vinedp:looting/splits/hide_pb_indicators
 
 function vinedp:looting/bs2/inv/load
 
