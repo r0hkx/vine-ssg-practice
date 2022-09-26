@@ -16,3 +16,6 @@ function vinedp:util/enablefeedback
 function vinedp:util/setcobweb
 scoreboard players set @s updatePBs 0
 gamerule fallDamage false
+
+# BlockCoolDownReset 
+playsound cdreset:reset_cooldown ambient @a
