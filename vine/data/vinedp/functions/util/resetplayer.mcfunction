@@ -18,4 +18,4 @@ scoreboard players set @s updatePBs 0
 gamerule fallDamage false
 
 # BlockCoolDownReset 
-playsound cdreset:reset_cooldown ambient @a
+execute as @a at @s run playsound cdreset:reset_cooldown ambient @a

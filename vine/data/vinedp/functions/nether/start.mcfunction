@@ -5,3 +5,4 @@ scoreboard players set @s runningNether 1
 
 function vinedp:ghostrunner/startrecording
 function vinedp:ghostrunner/replaynether
+function vinedp:speedrunigt/startpractice

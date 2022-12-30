@@ -13,3 +13,4 @@ gamemode survival @s
 # gamerule sendCommandFeedback true
 
 function vinedp:ghostrunner/stop
+function vinedp:speedrunigt/stoppractice

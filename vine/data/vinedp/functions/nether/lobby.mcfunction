@@ -15,3 +15,4 @@ clear @s
 gamemode survival @s
 
 function vinedp:ghostrunner/stop
+function vinedp:speedrunigt/stoppractice
