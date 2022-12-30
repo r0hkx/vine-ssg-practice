@@ -11,3 +11,5 @@ function vinedp:nether/splits/updatepbs
 function vinedp:nether/splits/show_pb_indicators
 clear @s
 gamemode survival @s
+
+function vinedp:speedrunigt/stoppractice
